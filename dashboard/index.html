@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankNifty Options — Live Trading Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0a0a1a; color: #e0e0e0; }
+        .header { background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 15px 30px; border-bottom: 1px solid #2a2a4a; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { color: #00d4ff; font-size: 24px; }
+        .status-indicator { display: flex; gap: 20px; align-items: center; }
+        .indicator { display: flex; align-items: center; gap: 8px; }
+        .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot.green { background: #00ff88; box-shadow: 0 0 10px #00ff88; }
+        .dot.red { background: #ff4444; box-shadow: 0 0 10px #ff4444; }
+        .dot.yellow { background: #ffaa00; box-shadow: 0 0 10px #ffaa00; }
+        .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; }
+        .card { background: #1a1a2e; border-radius: 12px; padding: 20px; border: 1px solid #2a2a4a; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .card-title { color: #00d4ff; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        .pnl-meter { text-align: center; padding: 20px; }
+        .pnl-value { font-size: 48px; font-weight: bold; color: #00ff88; }
+        .pnl-value.negative { color: #ff4444; }
+        .pnl-label { color: #888; margin-top: 5px; }
+        .positions-table { width: 100%; border-collapse: collapse; }
+        .positions-table th { text-align: left; padding: 10px; border-bottom: 1px solid #2a2a4a; color: #888; font-size: 12px; }
+        .positions-table td { padding: 12px 10px; border-bottom: 1px solid #1a1a2e; }
+        .positions-table tr:hover { background: #2a2a4a; }
+        .order-book { max-height: 300px; overflow-y: auto; }
+        .signal-log { max-height: 300px; overflow-y: auto; }
+        .signal-entry { padding: 10px; border-bottom: 1px solid #2a2a4a; display: flex; justify-content: space-between; }
+        .signal-entry:last-child { border-bottom: none; }
+        .signal-time { color: #888; font-size: 12px; }
+        .signal-type { font-weight: bold; }
+        .signal-type.BUY { color: #00ff88; }
+        .signal-type.SELL { color: #ff4444; }
+        .kill-btn { background: linear-gradient(135deg, #ff4444, #cc0000); color: white; border: none; padding: 15px 40px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 20px; }
+        .kill-btn:hover { background: linear-gradient(135deg, #ff6666, #ee2222); }
+        .chart-container { height: 250px; }
+        .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px; }
+        .metric-card { background: #1a1a2e; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #2a2a4a; }
+        .metric-value { font-size: 24px; font-weight: bold; color: #00d4ff; }
+        .metric-label { color: #888; font-size: 12px; margin-top: 5px; }
+        .bottom-section { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; padding: 0 20px 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BANKNFITY OPTIONS — LIVE TRADING</h1>
+        <div class="status-indicator">
+            <div class="indicator"><div class="dot green" id="ws-status"></div><span>WebSocket</span></div>
+            <div class="indicator"><div class="dot green" id="broker-status"></div><span>Broker</span></div>
+            <div class="indicator"><span id="time"></span></div>
+        </div>
+    </div>
+
+    <div class="metrics">
+        <div class="metric-card">
+            <div class="metric-value" id="equity">₹100,000</div>
+            <div class="metric-label">Total Equity</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value" id="margin-used">₹0</div>
+            <div class="metric-label">Margin Used</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value" id="open-positions">0</div>
+            <div class="metric-label">Open Positions</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value" id="day-pnl">₹0</div>
+            <div class="metric-label">Day P&L</div>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Equity Curve</span>
+                <span style="color:#888;font-size:12px">Today</span>
+            </div>
+            <div class="chart-container">
+                <canvas id="equity-chart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Live Positions</span>
+            </div>
+            <div class="positions-table-container" style="max-height:250px;overflow-y:auto;">
+                <table class="positions-table">
+                    <thead>
+                        <tr>
+                            <th>Instrument</th>
+                            <th>Side</th>
+                            <th>Qty</th>
+                            <th>Entry</th>
+                            <th>Current</th>
+                            <th>P&L</th>
+                        </tr>
+                    </thead>
+                    <tbody id="positions-body">
+                        <tr><td colspan="6" style="text-align:center;color:#666">No open positions</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Signal Log</span>
+            </div>
+            <div class="signal-log" id="signal-log">
+                <div class="signal-entry"><span class="signal-time">No signals yet</span></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Order Book</span>
+            </div>
+            <div class="order-book" id="order-book">
+                <div style="text-align:center;color:#666;padding:20px;">No orders</div>
+            </div>
+            <div style="text-align:center;margin-top:20px;">
+                <button class="kill-btn" onclick="triggerKillSwitch()">KILL SWITCH</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let equityChart;
+        const signals = [];
+        const orders = [];
+        let currentEquity = 100000;
+
+        function initEquityChart() {
+            const ctx = document.getElementById('equity-chart').getContext('2d');
+            equityChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Equity',
+                        data: [],
+                        borderColor: '#00d4ff',
+                        backgroundColor: 'rgba(0,212,255,0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { grid: { color: '#2a2a4a' }, ticks: { color: '#888' } },
+                        y: { grid: { color: '#2a2a4a' }, ticks: { color: '#888', callback: v => '₹' + v.toLocaleString() } }
+                    }
+                }
+            });
+        }
+
+        function updateEquity(newEquity) {
+            currentEquity = newEquity;
+            const now = new Date().toLocaleTimeString();
+            equityChart.data.labels.push(now);
+            equityChart.data.datasets[0].data.push(newEquity);
+            if (equityChart.data.labels.length > 50) {
+                equityChart.data.labels.shift();
+                equityChart.data.datasets[0].data.shift();
+            }
+            equityChart.update();
+            document.getElementById('equity').textContent = '₹' + newEquity.toLocaleString();
+            document.getElementById('equity').className = newEquity < 100000 ? 'metric-value negative' : 'metric-value';
+        }
+
+        function addSignal(signal) {
+            signals.unshift({ ...signal, time: new Date().toLocaleTimeString() });
+            if (signals.length > 20) signals.pop();
+            const log = document.getElementById('signal-log');
+            log.innerHTML = signals.map(s => `
+                <div class="signal-entry">
+                    <div>
+                        <span class="signal-type ${s.signal}">${s.signal}</span>
+                        <span style="margin-left:10px">${s.strike} ${s.option_type}</span>
+                        <span style="margin-left:10px;color:#888">${s.reason || ''}</span>
+                    </div>
+                    <span class="signal-time">${s.time}</span>
+                </div>
+            `).join('');
+        }
+
+        function addOrder(order) {
+            orders.unshift({ ...order, time: new Date().toLocaleTimeString() });
+            if (orders.length > 10) orders.pop();
+            const book = document.getElementById('order-book');
+            book.innerHTML = orders.map(o => `
+                <div class="signal-entry">
+                    <div>
+                        <span style="color:${o.side==='BUY'?'#00ff88':'#ff4444'}">${o.side}</span>
+                        <span style="margin-left:10px">${o.instrument}</span>
+                        <span style="margin-left:10px">@ ₹${o.price}</span>
+                    </div>
+                    <span style="color:${o.status==='FILLED'?'#00ff88':'o.status==='REJECTED'?'#ff4444':'#ffaa00'}">${o.status}</span>
+                </div>
+            `).join('');
+        }
+
+        function updatePositions(positions) {
+            const tbody = document.getElementById('positions-body');
+            if (positions.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#666">No open positions</td></tr>';
+            } else {
+                tbody.innerHTML = positions.map(p => {
+                    const pnl = (p.current_price - p.entry_price) * p.quantity * 15;
+                    return `<tr>
+                        <td>${p.instrument}</td>
+                        <td style="color:${p.side==='BUY'?'#00ff88':'#ff4444'}">${p.side}</td>
+                        <td>${p.quantity}</td>
+                        <td>₹${p.entry_price}</td>
+                        <td>₹${p.current_price}</td>
+                        <td style="color:${pnl>=0?'#00ff88':'#ff4444'}">₹${pnl.toFixed(0)}</td>
+                    </tr>`;
+                }).join('');
+            }
+            document.getElementById('open-positions').textContent = positions.length;
+        }
+
+        function triggerKillSwitch() {
+            if (confirm('Are you sure you want to activate the KILL SWITCH? All positions will be squared off.')) {
+                fetch('/api/kill-switch', { method: 'POST' })
+                    .then(() => alert('Kill switch activated!'))
+                    .catch(() => alert('Kill switch command sent.'));
+            }
+        }
+
+        function updateTime() {
+            document.getElementById('time').textContent = new Date().toLocaleString();
+        }
+
+        // Simulated WebSocket data for demo
+        function simulateData() {
+            const tick = Math.random() * 20 - 10;
+            currentEquity += tick;
+            updateEquity(Math.round(currentEquity));
+
+            if (Math.random() > 0.95) {
+                addSignal({
+                    signal: Math.random() > 0.5 ? 'BUY' : 'SELL',
+                    strike: 45000 + Math.round((Math.random() - 0.5) * 400),
+                    option_type: Math.random() > 0.5 ? 'CE' : 'PE',
+                    reason: 'Synthetic signal'
+                });
+            }
+        }
+
+        // Demo mode simulation
+        setInterval(simulateData, 2000);
+        setInterval(updateTime, 1000);
+
+        initEquityChart();
+        updateEquity(100000);
+    </script>
+</body>
+</html>

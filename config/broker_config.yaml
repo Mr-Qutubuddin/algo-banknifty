@@ -1,0 +1,156 @@
+# Broker Configuration — ALL brokers managed from this file
+# Nothing is hardcoded anywhere in the system
+
+broker:
+  # Active broker: zerodha | mstock | paper_trading | simulation
+  provider: "simulation"
+
+  # Simulation mode: replay (historical tick replay) | live (real WebSocket)
+  simulation_mode: "replay"
+
+  # Default lot size for BANKNIFTY options
+  default_lot_size: 15
+
+  # Default product type: MIS (intraday) | CNC | NRML
+  default_product: "MIS"
+
+  # Default exchange for options
+  default_exchange: "NFO"
+
+  # Auto square-off time (HH:MM format, 24h)
+  auto_squareoff_time: "15:20"
+
+# ── Zerodha Kite ──────────────────────────────────────────────────────────────
+zerodha:
+  enabled: true
+  api_key: ""                    # Your Kite API key
+  api_secret: ""                 # Your Kite API secret
+  access_token: ""               # Stored in access_token_path after login
+  access_token_path: "config/.zerodha_token"   # File where token is cached
+
+  # WebSocket tokens (instrument tokens for BANKNIFTY spot + options)
+  instrument_tokens:
+    spot: 260105                 # BANKNIFTY spot
+    ce_token: 260106             # Example CE token (update with actual)
+    pe_token: 260107             # Example PE token
+
+  # Historical data fetch settings
+  historical:
+    from_date: "2023-01-01"
+    to_date: "2026-12-31"
+    intervals:
+      - "5minute"
+      - "hourly"
+      - "day"
+
+# ── mStock (Motilal Oswal) ────────────────────────────────────────────────────
+mstock:
+  enabled: false
+  # mStock uses https://api.mstock.com/feeds/... or similar
+  # Contact Motilal Oswal for their API credentials and WebSocket endpoint
+  api_url: "https://api.mstock.com"
+  ws_url: "wss://ws.mstock.com"
+  api_key: ""                    # Your mStock API key
+  api_secret: ""                 # Your mStock API secret
+  client_id: ""                  # Your mStock client ID
+  consumer_key: ""              # mStock consumer key for auth
+
+  # WebSocket tokens
+  instrument_tokens:
+    banknifty_spot: 260105       # Verify with mStock instrument list
+    nifty_spot: 25601
+    # Add CE/PE tokens from mStock instrument master
+
+  # Historical data
+  historical:
+    from_date: "2023-01-01"
+    to_date: "2026-12-31"
+    intervals:
+      - "5min"
+      - "60min"
+      - "1day"
+
+  # mStock-specific order types
+  product_types:
+    intraday: "MIS"
+    carryover: "CNC"
+    positional: "NRML"
+
+# ── Paper Trading (simulated fills, real tick replay) ────────────────────────
+paper_trading:
+  enabled: true
+  initial_capital: 100000        # Starting capital in ₹
+
+  # Brokerage model (per user specification)
+  brokerage:
+    flat_per_side: 5.0          # ₹5 flat per side (buy or sell)
+    gst_pct: 6.5                 # 6.5% GST on brokerage
+    stt_pct: 0.05                # 0.05% STT on sell turnover
+    sebi_pct: 0.01               # 0.01% SEBI on turnover
+
+  # Slippage (0.05% = 5 basis points)
+  slippage_pct: 0.05
+
+  # Margin requirements
+  margin:
+    buy_multiplier: 0.20         # 20% margin for BUY orders
+    sell_multiplier: 0.15        # 15% margin for SELL orders
+
+  # Simulate order fills
+  simulate_fills: true
+  fill_latency_ms: 0             # 0 = instant fill in paper mode
+
+# ── Simulation Broker (real ticks, simulated fills) ─────────────────────────
+simulation:
+  enabled: true
+  initial_capital: 100000
+
+  brokerage:
+    flat_per_side: 5.0
+    gst_pct: 6.5
+    stt_pct: 0.05
+    sebi_pct: 0.01
+
+  slippage_pct: 0.05
+
+  margin:
+    buy_multiplier: 0.20
+    sell_multiplier: 0.15
+
+  # Tick source: set in run_paper_trading.py via --mode replay|live
+  # replay = DataFeeder historical tick replay
+  # live = Zerodha or mStock WebSocket
+  mode: "replay"
+
+  # Replay speed (1 = 1 tick per second)
+  replay_speed: 1
+
+  # Fallback: if no data_feeder, use static price
+  fallback_spot_price: 45000
+
+# ── Logging ─────────────────────────────────────────────────────────────────
+logging:
+  level: "DEBUG"               # DEBUG | INFO | WARNING | ERROR
+  format: "json"               # json (machine-readable) | text (human-readable)
+  file_rotation:
+    max_bytes: 10485760        # 10 MB per file
+    backup_count: 5
+  console_output: true
+
+# ── Trading Hours ─────────────────────────────────────────────────────────────
+trading_hours:
+  start: "09:15"
+  end: "15:30"
+  timezone: "Asia/Kolkata"
+  allow_outside_hours: false
+
+# ── Data Feeds ────────────────────────────────────────────────────────────────
+data_feeds:
+  primary:
+    path: "data/feeds/simulation_feed_hourly.json"
+    fallback_path: "data/feeds/simulation_feed.json"
+    format: "json"
+  realtime:
+    provider: "zerodha"
+    reconnect_interval_seconds: 5
+    max_reconnect_attempts: 10

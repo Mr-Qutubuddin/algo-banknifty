@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtest Results Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a1a; color: #e0e0e0; }
+        .header { background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 15px 30px; border-bottom: 1px solid #2a2a4a; }
+        .header h1 { color: #00d4ff; }
+        .content { padding: 20px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; margin-bottom: 20px; }
+        .stat-card { background: #1a1a2e; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #2a2a4a; }
+        .stat-value { font-size: 28px; font-weight: bold; color: #00d4ff; }
+        .stat-value.positive { color: #00ff88; }
+        .stat-value.negative { color: #ff4444; }
+        .stat-label { color: #888; font-size: 12px; margin-top: 5px; }
+        .chart-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; margin-bottom: 20px; }
+        .card { background: #1a1a2e; border-radius: 12px; padding: 20px; border: 1px solid #2a2a4a; }
+        .card-title { color: #00d4ff; font-size: 14px; text-transform: uppercase; margin-bottom: 15px; }
+        .chart-container { height: 300px; }
+        .table-container { max-height: 400px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 12px; background: #16213e; color: #888; font-size: 12px; position: sticky; top: 0; }
+        td { padding: 12px; border-bottom: 1px solid #2a2a4a; }
+        tr:hover { background: #2a2a4a; }
+        .heatmap-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; }
+        .heatmap-cell { aspect-ratio: 1; border-radius: 2px; font-size: 10px; display: flex; align-items: center; justify-content: center; }
+        .strategy-select { background: #1a1a2e; color: white; padding: 10px 20px; border: 1px solid #2a2a4a; border-radius: 5px; margin-bottom: 20px; }
+        .rank-1 { color: #ffd700; }
+        .rank-2 { color: #c0c0c0; }
+        .rank-3 { color: #cd7f32; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BACKTEST RESULTS — STRATEGY COMPARISON</h1>
+    </div>
+
+    <div class="content">
+        <select class="strategy-select" id="strategy-select" onchange="loadStrategy()">
+            <option value="">Select a strategy...</option>
+            <option value="strategy_001_approach_A">Strategy 001 / Approach A</option>
+            <option value="strategy_001_approach_B">Strategy 001 / Approach B</option>
+            <option value="strategy_001_approach_C">Strategy 001 / Approach C</option>
+        </select>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="sharpe">0.00</div>
+                <div class="stat-label">Sharpe Ratio</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="sortino">0.00</div>
+                <div class="stat-label">Sortino Ratio</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value negative" id="maxdd">0%</div>
+                <div class="stat-label">Max Drawdown</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="winrate">0%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value positive" id="profitfactor">0</div>
+                <div class="stat-label">Profit Factor</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="trades">0</div>
+                <div class="stat-label">Total Trades</div>
+            </div>
+        </div>
+
+        <div class="chart-grid">
+            <div class="card">
+                <div class="card-title">Equity Curve</div>
+                <div class="chart-container">
+                    <canvas id="equity-chart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">Monthly P&L Heatmap</div>
+                <div class="heatmap-grid" id="heatmap"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Strategy Comparison</div>
+            <div class="table-container">
+                <table id="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Strategy</th>
+                            <th>Approach</th>
+                            <th>Sharpe</th>
+                            <th>Win Rate</th>
+                            <th>Max DD</th>
+                            <th>Profit Factor</th>
+                            <th>Trades</th>
+                            <th>P&L</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-body">
+                        <tr><td colspan="9" style="text-align:center;color:#666">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let equityChart;
+        const mockData = {
+            'strategy_001_approach_A': { sharpe: 1.85, sortino: 2.1, maxdd: 12.5, winrate: 68, pf: 2.3, trades: 156, equity: [100000, 102000, 105000, 103000, 108000, 112000, 115000, 113000, 118000, 122000] },
+            'strategy_001_approach_B': { sharpe: 1.52, sortino: 1.8, maxdd: 18.2, winrate: 62, pf: 1.9, trades: 142, equity: [100000, 101000, 103000, 101500, 105000, 107000, 106000, 110000, 112000, 115000] },
+            'strategy_001_approach_C': { sharpe: 0.95, sortino: 1.1, maxdd: 22.1, winrate: 55, pf: 1.4, trades: 98, equity: [100000, 100500, 102000, 101000, 103000, 102500, 104000, 103500, 105000, 104500] }
+        };
+
+        function initEquityChart() {
+            const ctx = document.getElementById('equity-chart').getContext('2d');
+            equityChart = new Chart(ctx, {
+                type: 'line',
+                data: { labels: [], datasets: [{ label: 'Equity', data: [], borderColor: '#00d4ff', backgroundColor: 'rgba(0,212,255,0.1)', fill: true, tension: 0.4 }] },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: { x: { grid: { color: '#2a2a4a' }, ticks: { color: '#888' } },
+                              y: { grid: { color: '#2a2a4a' }, ticks: { color: '#888', callback: v => '₹' + v.toLocaleString() } } }
+                }
+            });
+        }
+
+        function loadStrategy() {
+            const sel = document.getElementById('strategy-select').value;
+            if (!sel || !mockData[sel]) return;
+            const d = mockData[sel];
+            document.getElementById('sharpe').textContent = d.sharpe.toFixed(2);
+            document.getElementById('sortino').textContent = d.sortino.toFixed(2);
+            document.getElementById('maxdd').textContent = d.maxdd.toFixed(1) + '%';
+            document.getElementById('winrate').textContent = d.winrate + '%';
+            document.getElementById('profitfactor').textContent = d.pf.toFixed(1);
+            document.getElementById('trades').textContent = d.trades;
+            equityChart.data.datasets[0].data = d.equity;
+            equityChart.data.labels = d.equity.map((_, i) => 'Day ' + (i + 1));
+            equityChart.update();
+        }
+
+        function generateHeatmap() {
+            const heatmap = document.getElementById('heatmap');
+            heatmap.innerHTML = '';
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            for (let y = 0; y < 2; y++) {
+                for (let m = 0; m < 12; m++) {
+                    const val = Math.round((Math.random() - 0.3) * 10000);
+                    const color = val >= 0 ? `rgba(0,255,136,${Math.min(1, Math.abs(val)/10000)})` : `rgba(255,68,68,${Math.min(1, Math.abs(val)/10000)})`;
+                    const cell = document.createElement('div');
+                    cell.className = 'heatmap-cell';
+                    cell.style.background = color;
+                    cell.textContent = months[m] + (y === 0 ? "'25" : "'26");
+                    heatmap.appendChild(cell);
+                }
+            }
+        }
+
+        function loadComparison() {
+            const tbody = document.getElementById('comparison-body');
+            const strategies = [
+                { rank: 1, strategy: 'Strategy 001', approach: 'Approach A', sharpe: 1.85, wr: 68, dd: 12.5, pf: 2.3, trades: 156, pnl: 22000 },
+                { rank: 2, strategy: 'Strategy 001', approach: 'Approach B', sharpe: 1.52, wr: 62, dd: 18.2, pf: 1.9, trades: 142, pnl: 15000 },
+                { rank: 3, strategy: 'Strategy 002', approach: 'Approach A', sharpe: 1.38, wr: 60, dd: 15.5, pf: 1.8, trades: 130, pnl: 12000 },
+                { rank: 4, strategy: 'Strategy 003', approach: 'Approach A', sharpe: 1.15, wr: 58, dd: 20.0, pf: 1.6, trades: 115, pnl: 8000 },
+            ];
+            tbody.innerHTML = strategies.map(s => `
+                <tr>
+                    <td class="rank-${s.rank}">${'🥇🥈🥉'.charAt(s.rank - 1) || s.rank}</td>
+                    <td>${s.strategy}</td>
+                    <td>${s.approach}</td>
+                    <td>${s.sharpe.toFixed(2)}</td>
+                    <td>${s.wr}%</td>
+                    <td style="color:#ff4444">${s.dd}%</td>
+                    <td>${s.pf.toFixed(1)}</td>
+                    <td>${s.trades}</td>
+                    <td style="color:${s.pnl>=0?'#00ff88':'#ff4444'}">₹${s.pnl.toLocaleString()}</td>
+                </tr>
+            `).join('');
+        }
+
+        initEquityChart();
+        generateHeatmap();
+        loadComparison();
+    </script>
+</body>
+</html>

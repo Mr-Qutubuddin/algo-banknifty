@@ -1,0 +1,29 @@
+# Risk Management Configuration
+
+risk:
+  max_daily_loss: 8000
+  max_per_trade_loss: 5000
+  max_open_positions: 3
+  max_margin_utilization: 0.8
+  max_exposure_per_expiry: 200000
+
+position:
+  max_lots_per_trade: 2
+  max_strike_width: 500
+  min_liquidity_oi: 50000
+
+kill_switch:
+  daily_loss_threshold: 10000
+  hourly_loss_threshold: 3000
+  enabled: true
+  notification: "console"  # console | telegram | both
+
+hedging:
+  delta_hedge_threshold: 0.3
+  gamma_alert_threshold: 0.5
+  auto_rebalance_interval_minutes: 15
+
+exposure:
+  max_ce_exposure: 100000
+  max_pe_exposure: 100000
+  max_spread_exposure: 150000

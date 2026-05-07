@@ -1,0 +1,3930 @@
+{
+  "strategy_id": "strategy_006",
+  "approach_id": "approach_C",
+  "start_date": "2025-05-07T23:52:09.448539",
+  "end_date": "2026-05-07T23:52:09.448539",
+  "trades": 162,
+  "equity_curve": [
+    {
+      "tick": 50,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 100,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 150,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 200,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 250,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 300,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 350,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 400,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 450,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 500,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 550,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 600,
+      "equity": 100000,
+      "drawdown": 0.0
+    },
+    {
+      "tick": 650,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 700,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 750,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 800,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 850,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 900,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 950,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 1000,
+      "equity": 95979.12000000001,
+      "drawdown": 0.0402087999999999
+    },
+    {
+      "tick": 1050,
+      "equity": 84954.53000000001,
+      "drawdown": 0.15045469999999986
+    },
+    {
+      "tick": 1100,
+      "equity": 84954.53000000001,
+      "drawdown": 0.15045469999999986
+    },
+    {
+      "tick": 1150,
+      "equity": 84954.53000000001,
+      "drawdown": 0.15045469999999986
+    },
+    {
+      "tick": 1200,
+      "equity": 77902.86000000003,
+      "drawdown": 0.2209713999999997
+    },
+    {
+      "tick": 1250,
+      "equity": 54005.050000000054,
+      "drawdown": 0.45994949999999946
+    },
+    {
+      "tick": 1300,
+      "equity": 29405.10000000005,
+      "drawdown": 0.7059489999999995
+    },
+    {
+      "tick": 1350,
+      "equity": 18787.780000000053,
+      "drawdown": 0.8121221999999995
+    },
+    {
+      "tick": 1400,
+      "equity": 11148.680000000051,
+      "drawdown": 0.8885131999999994
+    },
+    {
+      "tick": 1450,
+      "equity": -8373.32999999995,
+      "drawdown": 1.0837332999999996
+    },
+    {
+      "tick": 1500,
+      "equity": -8373.32999999995,
+      "drawdown": 1.0837332999999996
+    },
+    {
+      "tick": 1550,
+      "equity": -8373.32999999995,
+      "drawdown": 1.0837332999999996
+    },
+    {
+      "tick": 1600,
+      "equity": -17421.639999999952,
+      "drawdown": 1.1742163999999995
+    },
+    {
+      "tick": 1650,
+      "equity": -17421.639999999952,
+      "drawdown": 1.1742163999999995
+    },
+    {
+      "tick": 1700,
+      "equity": -28788.26999999995,
+      "drawdown": 1.2878826999999995
+    },
+    {
+      "tick": 1750,
+      "equity": -31181.85999999995,
+      "drawdown": 1.3118185999999996
+    },
+    {
+      "tick": 1800,
+      "equity": -51687.91249999995,
+      "drawdown": 1.5168791249999996
+    },
+    {
+      "tick": 1850,
+      "equity": -54878.332499999946,
+      "drawdown": 1.5487833249999996
+    },
+    {
+      "tick": 1900,
+      "equity": -60181.822499999944,
+      "drawdown": 1.6018182249999995
+    },
+    {
+      "tick": 1950,
+      "equity": -60181.822499999944,
+      "drawdown": 1.6018182249999995
+    },
+    {
+      "tick": 2000,
+      "equity": -60181.822499999944,
+      "drawdown": 1.6018182249999995
+    },
+    {
+      "tick": 2050,
+      "equity": -76631.10249999995,
+      "drawdown": 1.7663110249999996
+    },
+    {
+      "tick": 2100,
+      "equity": -88922.35249999992,
+      "drawdown": 1.8892235249999991
+    },
+    {
+      "tick": 2150,
+      "equity": -88922.35249999992,
+      "drawdown": 1.8892235249999991
+    },
+    {
+      "tick": 2200,
+      "equity": -88922.35249999992,
+      "drawdown": 1.8892235249999991
+    },
+    {
+      "tick": 2250,
+      "equity": -88922.35249999992,
+      "drawdown": 1.8892235249999991
+    },
+    {
+      "tick": 2300,
+      "equity": -88922.35249999992,
+      "drawdown": 1.8892235249999991
+    },
+    {
+      "tick": 2350,
+      "equity": -88922.35249999992,
+      "drawdown": 1.8892235249999991
+    },
+    {
+      "tick": 2400,
+      "equity": -112291.61249999989,
+      "drawdown": 2.122916124999999
+    },
+    {
+      "tick": 2450,
+      "equity": -115442.86249999989,
+      "drawdown": 2.1544286249999987
+    },
+    {
+      "tick": 2500,
+      "equity": -118387.65249999988,
+      "drawdown": 2.1838765249999987
+    },
+    {
+      "tick": 2550,
+      "equity": -118387.65249999988,
+      "drawdown": 2.1838765249999987
+    },
+    {
+      "tick": 2600,
+      "equity": -128252.41249999989,
+      "drawdown": 2.282524124999999
+    },
+    {
+      "tick": 2650,
+      "equity": -131025.1124999999,
+      "drawdown": 2.310251124999999
+    },
+    {
+      "tick": 2700,
+      "equity": -138900.6624999999,
+      "drawdown": 2.389006624999999
+    },
+    {
+      "tick": 2750,
+      "equity": -145272.0424999999,
+      "drawdown": 2.452720424999999
+    },
+    {
+      "tick": 2800,
+      "equity": -150172.2224999999,
+      "drawdown": 2.501722224999999
+    },
+    {
+      "tick": 2850,
+      "equity": -170772.35249999986,
+      "drawdown": 2.7077235249999987
+    },
+    {
+      "tick": 2900,
+      "equity": -179908.37249999985,
+      "drawdown": 2.7990837249999982
+    },
+    {
+      "tick": 2950,
+      "equity": -204837.26249999987,
+      "drawdown": 3.0483726249999985
+    },
+    {
+      "tick": 3000,
+      "equity": -221668.99249999985,
+      "drawdown": 3.216689924999998
+    },
+    {
+      "tick": 3050,
+      "equity": -246760.27249999988,
+      "drawdown": 3.4676027249999986
+    },
+    {
+      "tick": 3100,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3150,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3200,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3250,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3300,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3350,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3400,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3450,
+      "equity": -249558.37249999985,
+      "drawdown": 3.495583724999998
+    },
+    {
+      "tick": 3500,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3550,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3600,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3650,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3700,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3750,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3800,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3850,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3900,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 3950,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4000,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4050,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4100,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4150,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4200,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4250,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4300,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4350,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4400,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4450,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4500,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4550,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4600,
+      "equity": -254609.39249999984,
+      "drawdown": 3.5460939249999983
+    },
+    {
+      "tick": 4650,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 4700,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 4750,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 4800,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 4850,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 4900,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 4950,
+      "equity": -270288.72249999986,
+      "drawdown": 3.7028872249999987
+    },
+    {
+      "tick": 5000,
+      "equity": -272590.91249999986,
+      "drawdown": 3.7259091249999985
+    },
+    {
+      "tick": 5050,
+      "equity": -272590.91249999986,
+      "drawdown": 3.7259091249999985
+    }
+  ],
+  "monthly_pnl": {},
+  "statistics": {
+    "total_trades": 162,
+    "win_rate": 0.037,
+    "profit_factor": 0.52,
+    "avg_trade": -2393.43,
+    "sharpe_ratio": -40.355,
+    "max_drawdown_pct": 372.59,
+    "total_pnl": -387736.47,
+    "open_positions": 162,
+    "margin_used": 146006.71
+  },
+  "closed_trades": [
+    {
+      "order_id": "ORD_000001",
+      "instrument": "BANKNIFTY_44800_STRADDLE",
+      "strike": 44800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 291.36,
+      "exit_price": 152.76,
+      "pnl": -2085.7,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.15,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.7
+      },
+      "entry_time": "2023-09-25 14:15:00",
+      "exit_time": "2023-09-25 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000003",
+      "instrument": "BANKNIFTY_44800_STRADDLE",
+      "strike": 44800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 292.58,
+      "exit_price": 164.79,
+      "pnl": -1923.66,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.24,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.81
+      },
+      "entry_time": "2023-09-25 15:15:00",
+      "exit_time": "2023-09-25 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000005",
+      "instrument": "BANKNIFTY_47800_STRADDLE",
+      "strike": 47800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 310.74,
+      "exit_price": 160.15,
+      "pnl": -2265.62,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.2,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.77
+      },
+      "entry_time": "2023-12-22 12:15:00",
+      "exit_time": "2023-12-22 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000007",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 309.69,
+      "exit_price": 146.66,
+      "pnl": -2452.09,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.1,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.64
+      },
+      "entry_time": "2023-12-22 13:15:00",
+      "exit_time": "2023-12-22 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000009",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 318.59,
+      "exit_price": 112.5,
+      "pnl": -3097.69,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.84,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.34
+      },
+      "entry_time": "2023-12-26 10:15:00",
+      "exit_time": "2023-12-26 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000011",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 320.58,
+      "exit_price": 108.6,
+      "pnl": -3186.0,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.81,
+        "gst": 0.33,
+        "sebi_charges": 0.16,
+        "total_charges": 6.3
+      },
+      "entry_time": "2023-12-26 11:15:00",
+      "exit_time": "2023-12-26 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000013",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 298.97,
+      "exit_price": 150.28,
+      "pnl": -2237.03,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.13,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.68
+      },
+      "entry_time": "2024-01-23 09:15:00",
+      "exit_time": "2024-01-23 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000015",
+      "instrument": "BANKNIFTY_45000_STRADDLE",
+      "strike": 45000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 292.51,
+      "exit_price": 149.7,
+      "pnl": -2148.82,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.12,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.67
+      },
+      "entry_time": "2024-01-25 15:15:00",
+      "exit_time": "2024-01-25 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000017",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 298.35,
+      "exit_price": 122.21,
+      "pnl": -2648.52,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.92,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.42
+      },
+      "entry_time": "2024-01-29 12:15:00",
+      "exit_time": "2024-01-29 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000019",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 299.95,
+      "exit_price": 165.71,
+      "pnl": -2020.42,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.24,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.82
+      },
+      "entry_time": "2024-02-02 14:15:00",
+      "exit_time": "2024-02-02 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000021",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 300.63,
+      "exit_price": 170.62,
+      "pnl": -1957.01,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.28,
+        "gst": 0.33,
+        "sebi_charges": 0.26,
+        "total_charges": 6.86
+      },
+      "entry_time": "2024-02-02 15:15:00",
+      "exit_time": "2024-02-02 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000023",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 307.47,
+      "exit_price": 199.05,
+      "pnl": -1633.42,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.49,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.12
+      },
+      "entry_time": "2024-02-05 09:15:00",
+      "exit_time": "2024-02-05 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000025",
+      "instrument": "BANKNIFTY_45800_STRADDLE",
+      "strike": 45800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 305.44,
+      "exit_price": 110.64,
+      "pnl": -2928.32,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.83,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.32
+      },
+      "entry_time": "2024-02-05 10:15:00",
+      "exit_time": "2024-02-05 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000027",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 306.27,
+      "exit_price": 195.18,
+      "pnl": -1673.43,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.46,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.08
+      },
+      "entry_time": "2024-02-05 11:15:00",
+      "exit_time": "2024-02-05 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000029",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 299.04,
+      "exit_price": 154.06,
+      "pnl": -2181.41,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.16,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.71
+      },
+      "entry_time": "2024-02-05 12:15:00",
+      "exit_time": "2024-02-05 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000031",
+      "instrument": "BANKNIFTY_46000_STRADDLE",
+      "strike": 46000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 303.07,
+      "exit_price": 183.16,
+      "pnl": -1805.62,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.37,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.97
+      },
+      "entry_time": "2024-02-05 13:15:00",
+      "exit_time": "2024-02-05 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000033",
+      "instrument": "BANKNIFTY_45800_STRADDLE",
+      "strike": 45800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 299.45,
+      "exit_price": 129.94,
+      "pnl": -2549.14,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.97,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.49
+      },
+      "entry_time": "2024-02-05 14:15:00",
+      "exit_time": "2024-02-05 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000035",
+      "instrument": "BANKNIFTY_45800_STRADDLE",
+      "strike": 45800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 297.67,
+      "exit_price": 149.94,
+      "pnl": -2222.62,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.12,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.67
+      },
+      "entry_time": "2024-02-06 11:15:00",
+      "exit_time": "2024-02-06 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000037",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 295.12,
+      "exit_price": 151.48,
+      "pnl": -2161.29,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.14,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.69
+      },
+      "entry_time": "2024-02-09 11:15:00",
+      "exit_time": "2024-02-09 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000039",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 299.14,
+      "exit_price": 119.46,
+      "pnl": -2701.6,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.9,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.4
+      },
+      "entry_time": "2024-02-09 12:15:00",
+      "exit_time": "2024-02-09 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000041",
+      "instrument": "BANKNIFTY_45600_STRADDLE",
+      "strike": 45600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 296.94,
+      "exit_price": 137.61,
+      "pnl": -2396.51,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.03,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.56
+      },
+      "entry_time": "2024-02-09 14:15:00",
+      "exit_time": "2024-02-09 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000043",
+      "instrument": "BANKNIFTY_45800_STRADDLE",
+      "strike": 45800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 305.84,
+      "exit_price": 197.27,
+      "pnl": -1635.65,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.48,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.1
+      },
+      "entry_time": "2024-02-09 15:15:00",
+      "exit_time": "2024-02-09 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000045",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 295.41,
+      "exit_price": 157.2,
+      "pnl": -2079.89,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.18,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.74
+      },
+      "entry_time": "2024-02-12 09:15:00",
+      "exit_time": "2024-02-12 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000047",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 295.15,
+      "exit_price": 144.0,
+      "pnl": -2273.87,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.08,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.62
+      },
+      "entry_time": "2024-02-13 09:15:00",
+      "exit_time": "2024-02-13 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000049",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 295.1,
+      "exit_price": 150.7,
+      "pnl": -2172.68,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.13,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.68
+      },
+      "entry_time": "2024-02-13 10:15:00",
+      "exit_time": "2024-02-13 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000051",
+      "instrument": "BANKNIFTY_45200_STRADDLE",
+      "strike": 45200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 302.83,
+      "exit_price": 106.22,
+      "pnl": -2955.43,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.8,
+        "gst": 0.33,
+        "sebi_charges": 0.16,
+        "total_charges": 6.28
+      },
+      "entry_time": "2024-02-13 12:15:00",
+      "exit_time": "2024-02-13 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000053",
+      "instrument": "BANKNIFTY_45600_STRADDLE",
+      "strike": 45600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 302.03,
+      "exit_price": 187.94,
+      "pnl": -1718.37,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.41,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 7.02
+      },
+      "entry_time": "2024-02-13 14:15:00",
+      "exit_time": "2024-02-13 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000055",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 295.79,
+      "exit_price": 135.65,
+      "pnl": -2408.65,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.02,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.55
+      },
+      "entry_time": "2024-02-13 15:15:00",
+      "exit_time": "2024-02-13 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000057",
+      "instrument": "BANKNIFTY_45200_STRADDLE",
+      "strike": 45200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 297.89,
+      "exit_price": 118.7,
+      "pnl": -2694.24,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.89,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.39
+      },
+      "entry_time": "2024-02-14 09:15:00",
+      "exit_time": "2024-02-14 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000059",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 296.23,
+      "exit_price": 165.11,
+      "pnl": -1973.61,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.24,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.81
+      },
+      "entry_time": "2024-02-14 10:15:00",
+      "exit_time": "2024-02-14 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000061",
+      "instrument": "BANKNIFTY_45400_STRADDLE",
+      "strike": 45400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 295.08,
+      "exit_price": 147.02,
+      "pnl": -2227.55,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.1,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.65
+      },
+      "entry_time": "2024-02-14 11:15:00",
+      "exit_time": "2024-02-14 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000063",
+      "instrument": "BANKNIFTY_46800_STRADDLE",
+      "strike": 46800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 304.48,
+      "exit_price": 161.44,
+      "pnl": -2152.38,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.21,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.78
+      },
+      "entry_time": "2024-02-23 13:15:00",
+      "exit_time": "2024-02-23 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000065",
+      "instrument": "BANKNIFTY_46800_STRADDLE",
+      "strike": 46800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 304.87,
+      "exit_price": 140.12,
+      "pnl": -2477.84,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.05,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.59
+      },
+      "entry_time": "2024-02-23 14:15:00",
+      "exit_time": "2024-02-23 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000067",
+      "instrument": "BANKNIFTY_46800_STRADDLE",
+      "strike": 46800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 304.84,
+      "exit_price": 165.72,
+      "pnl": -2093.62,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.24,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.82
+      },
+      "entry_time": "2024-02-23 15:15:00",
+      "exit_time": "2024-02-23 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000069",
+      "instrument": "BANKNIFTY_46200_STRADDLE",
+      "strike": 46200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 302.91,
+      "exit_price": 177.03,
+      "pnl": -1895.12,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.33,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.92
+      },
+      "entry_time": "2024-02-29 13:15:00",
+      "exit_time": "2024-02-29 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000071",
+      "instrument": "BANKNIFTY_46200_STRADDLE",
+      "strike": 46200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 301.88,
+      "exit_price": 171.04,
+      "pnl": -1969.46,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.28,
+        "gst": 0.33,
+        "sebi_charges": 0.26,
+        "total_charges": 6.86
+      },
+      "entry_time": "2024-02-29 14:15:00",
+      "exit_time": "2024-02-29 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000073",
+      "instrument": "BANKNIFTY_46200_STRADDLE",
+      "strike": 46200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 307.54,
+      "exit_price": 112.92,
+      "pnl": -2925.64,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.85,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.34
+      },
+      "entry_time": "2024-02-29 15:15:00",
+      "exit_time": "2024-02-29 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000075",
+      "instrument": "BANKNIFTY_47400_STRADDLE",
+      "strike": 47400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 308.36,
+      "exit_price": 146.41,
+      "pnl": -2435.89,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.1,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.64
+      },
+      "entry_time": "2024-03-12 12:15:00",
+      "exit_time": "2024-03-12 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000077",
+      "instrument": "BANKNIFTY_47400_STRADDLE",
+      "strike": 47400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 308.11,
+      "exit_price": 157.88,
+      "pnl": -2260.2,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.18,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.75
+      },
+      "entry_time": "2024-03-12 13:15:00",
+      "exit_time": "2024-03-12 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000079",
+      "instrument": "BANKNIFTY_47400_STRADDLE",
+      "strike": 47400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 309.47,
+      "exit_price": 136.94,
+      "pnl": -2594.51,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.03,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.56
+      },
+      "entry_time": "2024-03-13 09:15:00",
+      "exit_time": "2024-03-13 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000081",
+      "instrument": "BANKNIFTY_46600_STRADDLE",
+      "strike": 46600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 303.71,
+      "exit_price": 138.33,
+      "pnl": -2487.27,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.04,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.57
+      },
+      "entry_time": "2024-03-18 12:15:00",
+      "exit_time": "2024-03-18 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000083",
+      "instrument": "BANKNIFTY_46600_STRADDLE",
+      "strike": 46600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 303.47,
+      "exit_price": 140.41,
+      "pnl": -2452.49,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.05,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.59
+      },
+      "entry_time": "2024-03-18 15:15:00",
+      "exit_time": "2024-03-18 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000085",
+      "instrument": "BANKNIFTY_46600_STRADDLE",
+      "strike": 46600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 303.9,
+      "exit_price": 136.97,
+      "pnl": -2510.51,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.03,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.56
+      },
+      "entry_time": "2024-03-21 11:15:00",
+      "exit_time": "2024-03-21 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000087",
+      "instrument": "BANKNIFTY_46800_STRADDLE",
+      "strike": 46800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 308.75,
+      "exit_price": 188.09,
+      "pnl": -1816.92,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.41,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 7.02
+      },
+      "entry_time": "2024-03-21 12:15:00",
+      "exit_time": "2024-03-21 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000089",
+      "instrument": "BANKNIFTY_46600_STRADDLE",
+      "strike": 46600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 310.75,
+      "exit_price": 112.63,
+      "pnl": -2978.14,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.84,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.34
+      },
+      "entry_time": "2024-03-21 13:15:00",
+      "exit_time": "2024-03-21 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000091",
+      "instrument": "BANKNIFTY_46800_STRADDLE",
+      "strike": 46800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 312.52,
+      "exit_price": 201.59,
+      "pnl": -1671.09,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.51,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.14
+      },
+      "entry_time": "2024-03-21 14:15:00",
+      "exit_time": "2024-03-21 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000093",
+      "instrument": "BANKNIFTY_46600_STRADDLE",
+      "strike": 46600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 310.48,
+      "exit_price": 113.25,
+      "pnl": -2964.79,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.85,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.34
+      },
+      "entry_time": "2024-03-21 15:15:00",
+      "exit_time": "2024-03-21 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000095",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 312.09,
+      "exit_price": 182.37,
+      "pnl": -1952.77,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.37,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.97
+      },
+      "entry_time": "2024-04-19 13:15:00",
+      "exit_time": "2024-04-19 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000097",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 310.58,
+      "exit_price": 138.81,
+      "pnl": -2583.12,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.04,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.57
+      },
+      "entry_time": "2024-04-19 14:15:00",
+      "exit_time": "2024-04-19 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000099",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 309.79,
+      "exit_price": 145.39,
+      "pnl": -2472.63,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.09,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.63
+      },
+      "entry_time": "2024-04-19 15:15:00",
+      "exit_time": "2024-04-19 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000101",
+      "instrument": "BANKNIFTY_47800_STRADDLE",
+      "strike": 47800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 312.6,
+      "exit_price": 178.62,
+      "pnl": -2016.63,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.34,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.93
+      },
+      "entry_time": "2024-04-22 09:15:00",
+      "exit_time": "2024-04-22 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000103",
+      "instrument": "BANKNIFTY_47800_STRADDLE",
+      "strike": 47800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 315.63,
+      "exit_price": 193.22,
+      "pnl": -1843.21,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.45,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.06
+      },
+      "entry_time": "2024-05-13 13:15:00",
+      "exit_time": "2024-05-13 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000105",
+      "instrument": "BANKNIFTY_47800_STRADDLE",
+      "strike": 47800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 315.18,
+      "exit_price": 191.4,
+      "pnl": -1863.75,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.44,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.05
+      },
+      "entry_time": "2024-05-13 14:15:00",
+      "exit_time": "2024-05-13 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000107",
+      "instrument": "BANKNIFTY_47800_STRADDLE",
+      "strike": 47800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 310.75,
+      "exit_price": 160.48,
+      "pnl": -2260.82,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.2,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.77
+      },
+      "entry_time": "2024-05-13 15:15:00",
+      "exit_time": "2024-05-13 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000109",
+      "instrument": "BANKNIFTY_47600_STRADDLE",
+      "strike": 47600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 314.72,
+      "exit_price": 121.91,
+      "pnl": -2898.57,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.91,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.42
+      },
+      "entry_time": "2024-05-14 09:15:00",
+      "exit_time": "2024-05-14 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000111",
+      "instrument": "BANKNIFTY_47800_STRADDLE",
+      "strike": 47800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 311.04,
+      "exit_price": 146.73,
+      "pnl": -2471.3,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.1,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.65
+      },
+      "entry_time": "2024-05-14 10:15:00",
+      "exit_time": "2024-05-14 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000113",
+      "instrument": "BANKNIFTY_48000_STRADDLE",
+      "strike": 48000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 312.02,
+      "exit_price": 153.28,
+      "pnl": -2387.8,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.15,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.7
+      },
+      "entry_time": "2024-05-21 09:15:00",
+      "exit_time": "2024-05-21 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000115",
+      "instrument": "BANKNIFTY_48600_STRADDLE",
+      "strike": 48600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 324.88,
+      "exit_price": 115.72,
+      "pnl": -3143.77,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.87,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.37
+      },
+      "entry_time": "2024-05-31 11:15:00",
+      "exit_time": "2024-05-31 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000117",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 319.1,
+      "exit_price": 138.26,
+      "pnl": -2719.17,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.04,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.57
+      },
+      "entry_time": "2024-05-31 12:15:00",
+      "exit_time": "2024-05-31 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000119",
+      "instrument": "BANKNIFTY_46800_STRANGLE",
+      "strike": 46800,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 100.06,
+      "exit_price": 203.6,
+      "pnl": -1558.73,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.31,
+        "total_charges": 5.63
+      },
+      "entry_time": "2024-06-04 11:15:00",
+      "exit_time": "2024-06-04 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000121",
+      "instrument": "BANKNIFTY_47200_STRANGLE",
+      "strike": 47200,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 101.92,
+      "exit_price": 245.14,
+      "pnl": -2153.99,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.37,
+        "total_charges": 5.69
+      },
+      "entry_time": "2024-06-04 12:15:00",
+      "exit_time": "2024-06-04 14:15:00",
+      "duration_minutes": 120.0
+    },
+    {
+      "order_id": "ORD_000122",
+      "instrument": "BANKNIFTY_47600_STRANGLE",
+      "strike": 47600,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 102.37,
+      "exit_price": 572.33,
+      "pnl": -7055.58,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.86,
+        "total_charges": 6.18
+      },
+      "entry_time": "2024-06-04 13:15:00",
+      "exit_time": "2024-06-04 14:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000126",
+      "instrument": "BANKNIFTY_47200_STRANGLE",
+      "strike": 47200,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 95.68,
+      "exit_price": 266.79,
+      "pnl": -2572.38,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.4,
+        "total_charges": 5.73
+      },
+      "entry_time": "2024-06-04 15:15:00",
+      "exit_time": "2024-06-05 09:15:00",
+      "duration_minutes": 1080.0
+    },
+    {
+      "order_id": "ORD_000123",
+      "instrument": "BANKNIFTY_47000_STRANGLE",
+      "strike": 47000,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 95.99,
+      "exit_price": 1.53,
+      "pnl": 1411.57,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.0,
+        "total_charges": 5.33
+      },
+      "entry_time": "2024-06-04 14:15:00",
+      "exit_time": "2024-06-05 10:15:00",
+      "duration_minutes": 1200.0
+    },
+    {
+      "order_id": "ORD_000127",
+      "instrument": "BANKNIFTY_47000_STRANGLE",
+      "strike": 47000,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 94.68,
+      "exit_price": 1.61,
+      "pnl": 1390.72,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.0,
+        "total_charges": 5.33
+      },
+      "entry_time": "2024-06-05 09:15:00",
+      "exit_time": "2024-06-05 10:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000129",
+      "instrument": "BANKNIFTY_47800_STRANGLE",
+      "strike": 47800,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 102.18,
+      "exit_price": 223.33,
+      "pnl": -1822.91,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.33,
+        "total_charges": 5.66
+      },
+      "entry_time": "2024-06-05 10:15:00",
+      "exit_time": "2024-06-05 11:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000132",
+      "instrument": "BANKNIFTY_47600_STRANGLE",
+      "strike": 47600,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 102.38,
+      "exit_price": 14.27,
+      "pnl": 1316.3,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.02,
+        "total_charges": 5.35
+      },
+      "entry_time": "2024-06-05 11:15:00",
+      "exit_time": "2024-06-05 12:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000134",
+      "instrument": "BANKNIFTY_48200_STRANGLE",
+      "strike": 48200,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 102.56,
+      "exit_price": 22.87,
+      "pnl": 1189.99,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.03,
+        "total_charges": 5.36
+      },
+      "entry_time": "2024-06-05 12:15:00",
+      "exit_time": "2024-06-05 13:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000136",
+      "instrument": "BANKNIFTY_48600_STRANGLE",
+      "strike": 48600,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 105.71,
+      "exit_price": 22.9,
+      "pnl": 1236.79,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.03,
+        "total_charges": 5.36
+      },
+      "entry_time": "2024-06-05 13:15:00",
+      "exit_time": "2024-06-05 14:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000138",
+      "instrument": "BANKNIFTY_49000_STRANGLE",
+      "strike": 49000,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 108.2,
+      "exit_price": 243.52,
+      "pnl": -2035.49,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.37,
+        "total_charges": 5.69
+      },
+      "entry_time": "2024-06-05 14:15:00",
+      "exit_time": "2024-06-05 15:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000140",
+      "instrument": "BANKNIFTY_48800_STRANGLE",
+      "strike": 48800,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 105.5,
+      "exit_price": 17.54,
+      "pnl": 1314.05,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.03,
+        "total_charges": 5.35
+      },
+      "entry_time": "2024-06-05 15:15:00",
+      "exit_time": "2024-06-06 09:15:00",
+      "duration_minutes": 1080.0
+    },
+    {
+      "order_id": "ORD_000142",
+      "instrument": "BANKNIFTY_49400_STRANGLE",
+      "strike": 49400,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 110.29,
+      "exit_price": 254.59,
+      "pnl": -2170.21,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.38,
+        "total_charges": 5.71
+      },
+      "entry_time": "2024-06-06 09:15:00",
+      "exit_time": "2024-06-06 11:15:00",
+      "duration_minutes": 120.0
+    },
+    {
+      "order_id": "ORD_000144",
+      "instrument": "BANKNIFTY_49600_STRANGLE",
+      "strike": 49600,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 107.25,
+      "exit_price": 404.0,
+      "pnl": -4457.18,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.61,
+        "total_charges": 5.93
+      },
+      "entry_time": "2024-06-06 10:15:00",
+      "exit_time": "2024-06-06 11:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000145",
+      "instrument": "BANKNIFTY_49200_STRANGLE",
+      "strike": 49200,
+      "option_type": "STRANGLE",
+      "side": "SELL",
+      "quantity": 1,
+      "entry_price": 106.34,
+      "exit_price": 248.09,
+      "pnl": -2131.95,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0,
+        "gst": 0.33,
+        "sebi_charges": 0.37,
+        "total_charges": 5.7
+      },
+      "entry_time": "2024-06-06 11:15:00",
+      "exit_time": "2024-06-06 12:15:00",
+      "duration_minutes": 60.0
+    },
+    {
+      "order_id": "ORD_000149",
+      "instrument": "BANKNIFTY_49600_STRADDLE",
+      "strike": 49600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 331.07,
+      "exit_price": 119.19,
+      "pnl": -3184.6,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.89,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.4
+      },
+      "entry_time": "2024-06-10 15:15:00",
+      "exit_time": "2024-06-10 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000151",
+      "instrument": "BANKNIFTY_51200_STRADDLE",
+      "strike": 51200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 342.27,
+      "exit_price": 121.89,
+      "pnl": -3312.12,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.91,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.42
+      },
+      "entry_time": "2024-06-21 12:15:00",
+      "exit_time": "2024-06-21 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000153",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 339.44,
+      "exit_price": 207.94,
+      "pnl": -1979.7,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.56,
+        "gst": 0.33,
+        "sebi_charges": 0.31,
+        "total_charges": 7.2
+      },
+      "entry_time": "2024-06-24 09:15:00",
+      "exit_time": "2024-06-24 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000155",
+      "instrument": "BANKNIFTY_51200_STRADDLE",
+      "strike": 51200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 332.81,
+      "exit_price": 163.79,
+      "pnl": -2542.1,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.23,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.8
+      },
+      "entry_time": "2024-07-26 12:15:00",
+      "exit_time": "2024-07-26 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000157",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 338.59,
+      "exit_price": 135.5,
+      "pnl": -3052.89,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.02,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.54
+      },
+      "entry_time": "2024-07-30 14:15:00",
+      "exit_time": "2024-07-30 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000159",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 335.09,
+      "exit_price": 151.85,
+      "pnl": -2755.29,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.14,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.69
+      },
+      "entry_time": "2024-07-30 15:15:00",
+      "exit_time": "2024-07-30 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000161",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 335.54,
+      "exit_price": 161.71,
+      "pnl": -2614.23,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.21,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.78
+      },
+      "entry_time": "2024-07-31 09:15:00",
+      "exit_time": "2024-07-31 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000163",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 336.61,
+      "exit_price": 187.08,
+      "pnl": -2249.96,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.4,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 7.01
+      },
+      "entry_time": "2024-07-31 10:15:00",
+      "exit_time": "2024-07-31 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000165",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 341.11,
+      "exit_price": 128.22,
+      "pnl": -3199.83,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.96,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.48
+      },
+      "entry_time": "2024-07-31 11:15:00",
+      "exit_time": "2024-07-31 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000167",
+      "instrument": "BANKNIFTY_50200_STRADDLE",
+      "strike": 50200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 328.97,
+      "exit_price": 191.42,
+      "pnl": -2070.3,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.44,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.05
+      },
+      "entry_time": "2024-08-07 14:15:00",
+      "exit_time": "2024-08-07 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000169",
+      "instrument": "BANKNIFTY_50200_STRADDLE",
+      "strike": 50200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 327.33,
+      "exit_price": 147.88,
+      "pnl": -2698.41,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.11,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.66
+      },
+      "entry_time": "2024-08-07 15:15:00",
+      "exit_time": "2024-08-07 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000171",
+      "instrument": "BANKNIFTY_50400_STRADDLE",
+      "strike": 50400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 327.71,
+      "exit_price": 158.55,
+      "pnl": -2544.15,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.19,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.75
+      },
+      "entry_time": "2024-08-08 11:15:00",
+      "exit_time": "2024-08-08 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000173",
+      "instrument": "BANKNIFTY_50200_STRADDLE",
+      "strike": 50200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 326.28,
+      "exit_price": 161.97,
+      "pnl": -2471.43,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.21,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.78
+      },
+      "entry_time": "2024-08-08 12:15:00",
+      "exit_time": "2024-08-08 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000175",
+      "instrument": "BANKNIFTY_50200_STRADDLE",
+      "strike": 50200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 326.29,
+      "exit_price": 161.55,
+      "pnl": -2477.88,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.21,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.78
+      },
+      "entry_time": "2024-08-08 13:15:00",
+      "exit_time": "2024-08-08 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000177",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 343.15,
+      "exit_price": 217.56,
+      "pnl": -1891.13,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.63,
+        "gst": 0.33,
+        "sebi_charges": 0.33,
+        "total_charges": 7.28
+      },
+      "entry_time": "2024-10-09 10:15:00",
+      "exit_time": "2024-10-09 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000179",
+      "instrument": "BANKNIFTY_51000_STRADDLE",
+      "strike": 51000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 338.09,
+      "exit_price": 128.15,
+      "pnl": -3155.58,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.96,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.48
+      },
+      "entry_time": "2024-10-09 13:15:00",
+      "exit_time": "2024-10-09 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000181",
+      "instrument": "BANKNIFTY_51000_STRADDLE",
+      "strike": 51000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 340.06,
+      "exit_price": 123.34,
+      "pnl": -3257.24,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.93,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.44
+      },
+      "entry_time": "2024-10-09 15:15:00",
+      "exit_time": "2024-10-09 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000183",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 334.41,
+      "exit_price": 177.42,
+      "pnl": -2361.77,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.33,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.92
+      },
+      "entry_time": "2024-10-10 09:15:00",
+      "exit_time": "2024-10-10 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000185",
+      "instrument": "BANKNIFTY_51200_STRADDLE",
+      "strike": 51200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 334.35,
+      "exit_price": 147.51,
+      "pnl": -2809.25,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.11,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.65
+      },
+      "entry_time": "2024-10-10 10:15:00",
+      "exit_time": "2024-10-10 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000187",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 334.07,
+      "exit_price": 167.9,
+      "pnl": -2499.39,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.26,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.84
+      },
+      "entry_time": "2024-10-10 11:15:00",
+      "exit_time": "2024-10-10 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000189",
+      "instrument": "BANKNIFTY_51400_STRADDLE",
+      "strike": 51400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 340.71,
+      "exit_price": 129.26,
+      "pnl": -3178.24,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.97,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.49
+      },
+      "entry_time": "2024-10-10 12:15:00",
+      "exit_time": "2024-10-10 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000191",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 339.0,
+      "exit_price": 201.09,
+      "pnl": -2075.78,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.51,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.13
+      },
+      "entry_time": "2024-10-10 14:15:00",
+      "exit_time": "2024-10-10 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000193",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 338.78,
+      "exit_price": 200.03,
+      "pnl": -2088.38,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.5,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.13
+      },
+      "entry_time": "2024-10-10 15:15:00",
+      "exit_time": "2024-10-10 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000195",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 341.23,
+      "exit_price": 131.97,
+      "pnl": -3145.41,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.99,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.51
+      },
+      "entry_time": "2024-10-22 13:15:00",
+      "exit_time": "2024-10-22 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000197",
+      "instrument": "BANKNIFTY_51600_STRADDLE",
+      "strike": 51600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 338.16,
+      "exit_price": 142.67,
+      "pnl": -2938.96,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.07,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.61
+      },
+      "entry_time": "2024-10-24 09:15:00",
+      "exit_time": "2024-10-24 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000199",
+      "instrument": "BANKNIFTY_50400_STRADDLE",
+      "strike": 50400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 327.68,
+      "exit_price": 159.26,
+      "pnl": -2533.06,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.19,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.76
+      },
+      "entry_time": "2024-11-21 13:15:00",
+      "exit_time": "2024-11-21 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000201",
+      "instrument": "BANKNIFTY_50400_STRADDLE",
+      "strike": 50400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 327.96,
+      "exit_price": 174.7,
+      "pnl": -2305.8,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.31,
+        "gst": 0.33,
+        "sebi_charges": 0.26,
+        "total_charges": 6.9
+      },
+      "entry_time": "2024-11-21 14:15:00",
+      "exit_time": "2024-11-21 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000203",
+      "instrument": "BANKNIFTY_50400_STRADDLE",
+      "strike": 50400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 330.45,
+      "exit_price": 138.66,
+      "pnl": -2883.42,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.04,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.57
+      },
+      "entry_time": "2024-11-21 15:15:00",
+      "exit_time": "2024-11-21 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000205",
+      "instrument": "BANKNIFTY_50800_STRADDLE",
+      "strike": 50800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 332.54,
+      "exit_price": 191.73,
+      "pnl": -2119.2,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.44,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.05
+      },
+      "entry_time": "2024-11-22 10:15:00",
+      "exit_time": "2024-11-22 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000207",
+      "instrument": "BANKNIFTY_52000_STRADDLE",
+      "strike": 52000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 338.85,
+      "exit_price": 154.84,
+      "pnl": -2766.87,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.16,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.72
+      },
+      "entry_time": "2024-11-29 15:15:00",
+      "exit_time": "2024-11-29 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000209",
+      "instrument": "BANKNIFTY_53400_STRADDLE",
+      "strike": 53400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 347.29,
+      "exit_price": 166.57,
+      "pnl": -2717.62,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.25,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.82
+      },
+      "entry_time": "2024-12-09 09:15:00",
+      "exit_time": "2024-12-09 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000211",
+      "instrument": "BANKNIFTY_53400_STRADDLE",
+      "strike": 53400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 347.45,
+      "exit_price": 164.17,
+      "pnl": -2756.0,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.23,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.8
+      },
+      "entry_time": "2024-12-16 10:15:00",
+      "exit_time": "2024-12-16 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000213",
+      "instrument": "BANKNIFTY_53400_STRADDLE",
+      "strike": 53400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 347.86,
+      "exit_price": 189.37,
+      "pnl": -2384.38,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.42,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 7.03
+      },
+      "entry_time": "2024-12-16 11:15:00",
+      "exit_time": "2024-12-16 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000215",
+      "instrument": "BANKNIFTY_53400_STRADDLE",
+      "strike": 53400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 355.8,
+      "exit_price": 129.74,
+      "pnl": -3397.39,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.97,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.49
+      },
+      "entry_time": "2024-12-16 15:15:00",
+      "exit_time": "2024-12-16 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000217",
+      "instrument": "BANKNIFTY_53200_STRADDLE",
+      "strike": 53200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 347.86,
+      "exit_price": 150.82,
+      "pnl": -2962.28,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.13,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.68
+      },
+      "entry_time": "2024-12-17 09:15:00",
+      "exit_time": "2024-12-17 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000219",
+      "instrument": "BANKNIFTY_51200_STRADDLE",
+      "strike": 51200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 340.48,
+      "exit_price": 215.84,
+      "pnl": -1876.87,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.62,
+        "gst": 0.33,
+        "sebi_charges": 0.32,
+        "total_charges": 7.27
+      },
+      "entry_time": "2025-01-01 10:15:00",
+      "exit_time": "2025-01-01 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000221",
+      "instrument": "BANKNIFTY_51000_STRADDLE",
+      "strike": 51000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 335.69,
+      "exit_price": 135.35,
+      "pnl": -3011.64,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.02,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.54
+      },
+      "entry_time": "2025-01-01 11:15:00",
+      "exit_time": "2025-01-01 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000223",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 321.57,
+      "exit_price": 194.54,
+      "pnl": -1912.53,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.46,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.08
+      },
+      "entry_time": "2025-01-14 14:15:00",
+      "exit_time": "2025-01-14 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000225",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 325.43,
+      "exit_price": 117.93,
+      "pnl": -3118.89,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.88,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.39
+      },
+      "entry_time": "2025-01-14 15:15:00",
+      "exit_time": "2025-01-14 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000227",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 324.21,
+      "exit_price": 200.65,
+      "pnl": -1860.53,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.5,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.13
+      },
+      "entry_time": "2025-01-15 09:15:00",
+      "exit_time": "2025-01-15 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000229",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 318.48,
+      "exit_price": 158.21,
+      "pnl": -2410.8,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.19,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.75
+      },
+      "entry_time": "2025-01-15 10:15:00",
+      "exit_time": "2025-01-15 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000231",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 323.83,
+      "exit_price": 199.19,
+      "pnl": -1876.72,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.49,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.12
+      },
+      "entry_time": "2025-01-15 11:15:00",
+      "exit_time": "2025-01-15 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000233",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 317.19,
+      "exit_price": 157.0,
+      "pnl": -2409.59,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.18,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.74
+      },
+      "entry_time": "2025-01-15 12:15:00",
+      "exit_time": "2025-01-15 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000235",
+      "instrument": "BANKNIFTY_48600_STRADDLE",
+      "strike": 48600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 317.68,
+      "exit_price": 138.31,
+      "pnl": -2697.12,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.04,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.57
+      },
+      "entry_time": "2025-01-15 13:15:00",
+      "exit_time": "2025-01-15 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000237",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 320.61,
+      "exit_price": 190.24,
+      "pnl": -1962.59,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.43,
+        "gst": 0.33,
+        "sebi_charges": 0.29,
+        "total_charges": 7.04
+      },
+      "entry_time": "2025-01-15 14:15:00",
+      "exit_time": "2025-01-15 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000239",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 317.28,
+      "exit_price": 164.46,
+      "pnl": -2299.11,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.23,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.81
+      },
+      "entry_time": "2025-01-15 15:15:00",
+      "exit_time": "2025-01-15 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000241",
+      "instrument": "BANKNIFTY_48600_STRADDLE",
+      "strike": 48600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 316.26,
+      "exit_price": 148.92,
+      "pnl": -2516.77,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.12,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.67
+      },
+      "entry_time": "2025-01-23 11:15:00",
+      "exit_time": "2025-01-23 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000243",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 322.75,
+      "exit_price": 199.33,
+      "pnl": -1858.42,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.49,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.12
+      },
+      "entry_time": "2025-01-23 12:15:00",
+      "exit_time": "2025-01-23 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000245",
+      "instrument": "BANKNIFTY_48800_STRADDLE",
+      "strike": 48800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 317.18,
+      "exit_price": 157.94,
+      "pnl": -2395.35,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.18,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.75
+      },
+      "entry_time": "2025-01-24 10:15:00",
+      "exit_time": "2025-01-24 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000247",
+      "instrument": "BANKNIFTY_48600_STRADDLE",
+      "strike": 48600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 315.88,
+      "exit_price": 160.18,
+      "pnl": -2342.27,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.2,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.77
+      },
+      "entry_time": "2025-01-24 12:15:00",
+      "exit_time": "2025-01-24 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000249",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 328.31,
+      "exit_price": 118.43,
+      "pnl": -3154.59,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.89,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.39
+      },
+      "entry_time": "2025-02-01 11:15:00",
+      "exit_time": "2025-02-01 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000251",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 323.84,
+      "exit_price": 125.9,
+      "pnl": -2975.56,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.94,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.46
+      },
+      "entry_time": "2025-02-01 12:15:00",
+      "exit_time": "2025-02-01 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000253",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 326.59,
+      "exit_price": 118.81,
+      "pnl": -3123.09,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.89,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.39
+      },
+      "entry_time": "2025-02-03 09:15:00",
+      "exit_time": "2025-02-03 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000255",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 325.86,
+      "exit_price": 124.45,
+      "pnl": -3027.6,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.93,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.45
+      },
+      "entry_time": "2025-02-03 10:15:00",
+      "exit_time": "2025-02-03 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000257",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 319.79,
+      "exit_price": 158.1,
+      "pnl": -2432.1,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.19,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.75
+      },
+      "entry_time": "2025-02-03 11:15:00",
+      "exit_time": "2025-02-03 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000259",
+      "instrument": "BANKNIFTY_49400_STRADDLE",
+      "strike": 49400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 323.46,
+      "exit_price": 186.91,
+      "pnl": -2055.26,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.4,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 7.01
+      },
+      "entry_time": "2025-02-03 12:15:00",
+      "exit_time": "2025-02-03 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000261",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 323.84,
+      "exit_price": 130.59,
+      "pnl": -2905.25,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.98,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.5
+      },
+      "entry_time": "2025-02-03 13:15:00",
+      "exit_time": "2025-02-03 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000263",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 320.6,
+      "exit_price": 146.51,
+      "pnl": -2617.99,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.1,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.64
+      },
+      "entry_time": "2025-02-03 14:15:00",
+      "exit_time": "2025-02-03 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000265",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 320.38,
+      "exit_price": 148.48,
+      "pnl": -2585.16,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.11,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.66
+      },
+      "entry_time": "2025-02-03 15:15:00",
+      "exit_time": "2025-02-03 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000267",
+      "instrument": "BANKNIFTY_49600_STRADDLE",
+      "strike": 49600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 322.46,
+      "exit_price": 157.02,
+      "pnl": -2488.34,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.18,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.74
+      },
+      "entry_time": "2025-02-12 12:15:00",
+      "exit_time": "2025-02-12 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000269",
+      "instrument": "BANKNIFTY_49600_STRADDLE",
+      "strike": 49600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 327.89,
+      "exit_price": 201.98,
+      "pnl": -1895.79,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.51,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.14
+      },
+      "entry_time": "2025-02-12 14:15:00",
+      "exit_time": "2025-02-12 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000271",
+      "instrument": "BANKNIFTY_49600_STRADDLE",
+      "strike": 49600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 326.8,
+      "exit_price": 197.57,
+      "pnl": -1945.55,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.48,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.1
+      },
+      "entry_time": "2025-02-12 15:15:00",
+      "exit_time": "2025-02-12 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000273",
+      "instrument": "BANKNIFTY_49800_STRADDLE",
+      "strike": 49800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 328.71,
+      "exit_price": 200.81,
+      "pnl": -1925.63,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.51,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.13
+      },
+      "entry_time": "2025-02-13 09:15:00",
+      "exit_time": "2025-02-13 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000275",
+      "instrument": "BANKNIFTY_49800_STRADDLE",
+      "strike": 49800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 324.98,
+      "exit_price": 181.38,
+      "pnl": -2160.96,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.36,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.96
+      },
+      "entry_time": "2025-02-13 10:15:00",
+      "exit_time": "2025-02-13 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000277",
+      "instrument": "BANKNIFTY_49600_STRADDLE",
+      "strike": 49600,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 333.23,
+      "exit_price": 114.72,
+      "pnl": -3284.01,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.86,
+        "gst": 0.33,
+        "sebi_charges": 0.17,
+        "total_charges": 6.36
+      },
+      "entry_time": "2025-02-13 11:15:00",
+      "exit_time": "2025-02-13 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000279",
+      "instrument": "BANKNIFTY_49400_STRADDLE",
+      "strike": 49400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 328.12,
+      "exit_price": 122.5,
+      "pnl": -3090.73,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.92,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.43
+      },
+      "entry_time": "2025-02-13 12:15:00",
+      "exit_time": "2025-02-13 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000281",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 321.87,
+      "exit_price": 132.44,
+      "pnl": -2847.97,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.99,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.52
+      },
+      "entry_time": "2025-02-17 13:15:00",
+      "exit_time": "2025-02-17 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000283",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 325.15,
+      "exit_price": 126.45,
+      "pnl": -2986.96,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.95,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.46
+      },
+      "entry_time": "2025-02-17 14:15:00",
+      "exit_time": "2025-02-17 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000285",
+      "instrument": "BANKNIFTY_49200_STRADDLE",
+      "strike": 49200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 327.15,
+      "exit_price": 121.12,
+      "pnl": -3096.87,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.91,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.42
+      },
+      "entry_time": "2025-02-17 15:15:00",
+      "exit_time": "2025-02-17 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000287",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 318.63,
+      "exit_price": 166.28,
+      "pnl": -2292.07,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.25,
+        "gst": 0.33,
+        "sebi_charges": 0.25,
+        "total_charges": 6.82
+      },
+      "entry_time": "2025-02-18 09:15:00",
+      "exit_time": "2025-02-18 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000289",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 318.82,
+      "exit_price": 150.68,
+      "pnl": -2528.78,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.13,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.68
+      },
+      "entry_time": "2025-02-18 11:15:00",
+      "exit_time": "2025-02-18 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000291",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 318.47,
+      "exit_price": 159.75,
+      "pnl": -2387.56,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.2,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.76
+      },
+      "entry_time": "2025-02-18 12:15:00",
+      "exit_time": "2025-02-18 12:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000293",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 321.43,
+      "exit_price": 134.15,
+      "pnl": -2815.73,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.01,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.53
+      },
+      "entry_time": "2025-02-18 13:15:00",
+      "exit_time": "2025-02-18 13:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000295",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 326.78,
+      "exit_price": 118.38,
+      "pnl": -3132.39,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.89,
+        "gst": 0.33,
+        "sebi_charges": 0.18,
+        "total_charges": 6.39
+      },
+      "entry_time": "2025-02-18 14:15:00",
+      "exit_time": "2025-02-18 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000297",
+      "instrument": "BANKNIFTY_49000_STRADDLE",
+      "strike": 49000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 323.42,
+      "exit_price": 127.14,
+      "pnl": -2950.67,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.95,
+        "gst": 0.33,
+        "sebi_charges": 0.19,
+        "total_charges": 6.47
+      },
+      "entry_time": "2025-02-18 15:15:00",
+      "exit_time": "2025-02-18 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000299",
+      "instrument": "BANKNIFTY_48200_STRADDLE",
+      "strike": 48200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 316.48,
+      "exit_price": 130.76,
+      "pnl": -2792.3,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 0.98,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.5
+      },
+      "entry_time": "2025-03-04 10:15:00",
+      "exit_time": "2025-03-04 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000301",
+      "instrument": "BANKNIFTY_55400_STRADDLE",
+      "strike": 55400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 360.13,
+      "exit_price": 184.95,
+      "pnl": -2634.69,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.39,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 6.99
+      },
+      "entry_time": "2025-05-27 14:15:00",
+      "exit_time": "2025-05-27 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000303",
+      "instrument": "BANKNIFTY_55400_STRADDLE",
+      "strike": 55400,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 361.51,
+      "exit_price": 201.68,
+      "pnl": -2404.59,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.51,
+        "gst": 0.33,
+        "sebi_charges": 0.3,
+        "total_charges": 7.14
+      },
+      "entry_time": "2025-05-27 15:15:00",
+      "exit_time": "2025-05-27 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000305",
+      "instrument": "BANKNIFTY_59200_STRADDLE",
+      "strike": 59200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 385.19,
+      "exit_price": 182.07,
+      "pnl": -3053.76,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.37,
+        "gst": 0.33,
+        "sebi_charges": 0.27,
+        "total_charges": 6.96
+      },
+      "entry_time": "2026-01-22 14:15:00",
+      "exit_time": "2026-01-22 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000307",
+      "instrument": "BANKNIFTY_59200_STRADDLE",
+      "strike": 59200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 388.28,
+      "exit_price": 162.35,
+      "pnl": -3395.74,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.22,
+        "gst": 0.33,
+        "sebi_charges": 0.24,
+        "total_charges": 6.79
+      },
+      "entry_time": "2026-01-22 15:15:00",
+      "exit_time": "2026-01-22 15:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000309",
+      "instrument": "BANKNIFTY_59000_STRADDLE",
+      "strike": 59000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 390.11,
+      "exit_price": 151.06,
+      "pnl": -3592.43,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.13,
+        "gst": 0.33,
+        "sebi_charges": 0.23,
+        "total_charges": 6.68
+      },
+      "entry_time": "2026-01-23 09:15:00",
+      "exit_time": "2026-01-23 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000311",
+      "instrument": "BANKNIFTY_59200_STRADDLE",
+      "strike": 59200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 385.0,
+      "exit_price": 184.87,
+      "pnl": -3008.94,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.39,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 6.99
+      },
+      "entry_time": "2026-01-23 10:15:00",
+      "exit_time": "2026-01-23 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000313",
+      "instrument": "BANKNIFTY_59200_STRADDLE",
+      "strike": 59200,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 386.02,
+      "exit_price": 213.24,
+      "pnl": -2598.94,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.6,
+        "gst": 0.33,
+        "sebi_charges": 0.32,
+        "total_charges": 7.24
+      },
+      "entry_time": "2026-01-27 14:15:00",
+      "exit_time": "2026-01-27 14:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000315",
+      "instrument": "BANKNIFTY_54800_STRADDLE",
+      "strike": 54800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 358.58,
+      "exit_price": 205.97,
+      "pnl": -2296.33,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.54,
+        "gst": 0.33,
+        "sebi_charges": 0.31,
+        "total_charges": 7.18
+      },
+      "entry_time": "2026-04-13 09:15:00",
+      "exit_time": "2026-04-13 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000317",
+      "instrument": "BANKNIFTY_55000_STRADDLE",
+      "strike": 55000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 365.37,
+      "exit_price": 136.26,
+      "pnl": -3443.2,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.02,
+        "gst": 0.33,
+        "sebi_charges": 0.2,
+        "total_charges": 6.55
+      },
+      "entry_time": "2026-05-06 09:15:00",
+      "exit_time": "2026-05-06 09:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000319",
+      "instrument": "BANKNIFTY_55000_STRADDLE",
+      "strike": 55000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 357.74,
+      "exit_price": 188.3,
+      "pnl": -2548.62,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.41,
+        "gst": 0.33,
+        "sebi_charges": 0.28,
+        "total_charges": 7.02
+      },
+      "entry_time": "2026-05-06 10:15:00",
+      "exit_time": "2026-05-06 10:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000321",
+      "instrument": "BANKNIFTY_54800_STRADDLE",
+      "strike": 54800,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 359.84,
+      "exit_price": 148.58,
+      "pnl": -3175.56,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.11,
+        "gst": 0.33,
+        "sebi_charges": 0.22,
+        "total_charges": 6.66
+      },
+      "entry_time": "2026-05-06 11:15:00",
+      "exit_time": "2026-05-06 11:15:00",
+      "duration_minutes": 0.0
+    },
+    {
+      "order_id": "ORD_000323",
+      "instrument": "BANKNIFTY_55000_STRADDLE",
+      "strike": 55000,
+      "option_type": "STRADDLE",
+      "side": "BUY",
+      "quantity": 1,
+      "entry_price": 363.53,
+      "exit_price": 141.22,
+      "pnl": -3341.25,
+      "charges": {
+        "brokerage": 5.0,
+        "stt": 1.06,
+        "gst": 0.33,
+        "sebi_charges": 0.21,
+        "total_charges": 6.6
+      },
+      "entry_time": "2026-05-06 13:15:00",
+      "exit_time": "2026-05-06 13:15:00",
+      "duration_minutes": 0.0
+    }
+  ]
+}

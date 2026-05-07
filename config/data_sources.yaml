@@ -1,0 +1,48 @@
+# Data Sources Configuration
+
+sources:
+  primary:
+    name: "zerodha_kite"
+    enabled: false
+    priority: 1
+
+  fallback:
+    name: "yfinance"
+    enabled: true
+    priority: 2
+
+  emergency:
+    name: "synthetic_gbm"
+    enabled: true
+    priority: 3
+    base_price: 45000
+    volatility: 0.02
+    seed: 42
+
+yfinance:
+  symbols:
+    banknifty_underlying: "^NSEBANK"
+    nifty_underlying: "^NSEI"
+  intervals:
+    - "1m"
+    - "5m"
+    - "15m"
+    - "1h"
+    - "1d"
+  max_date_range_years: 3
+
+options_data:
+  strikes_range: 2000
+  strikes_step: 100
+  expiries_count: 3
+  include_greeks: true
+
+vix:
+  source: "yfinance"
+  symbol: "^INDIAVIX"
+  interval: "1d"
+
+data_quality:
+  max_gap_hours: 4
+  allow_synthetic_fallback: true
+  validate_ohlcv: true

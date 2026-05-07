@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_001",
+  "approach_id": "approach_B",
+  "total_trades": 1155,
+  "win_rate": 0.5195,
+  "sharpe_ratio": -4.541,
+  "max_drawdown_pct": 803.87,
+  "profit_factor": 0.45,
+  "avg_trade": -1397.66,
+  "total_pnl": -1614292.65
+}

@@ -1,0 +1,56 @@
+# Logging Configuration
+logging:
+  level: "INFO"                # DEBUG | INFO | WARNING | ERROR
+  format: "json"               # json | text
+  file_rotation:
+    max_bytes: 10485760        # 10 MB per file
+    backup_count: 5            # Keep 5 rotated files
+  console_output: true         # Show logs in terminal
+
+  # Per-component log levels (override global level)
+  loggers:
+    algo_agent: "INFO"
+    broker: "INFO"
+    signal_engine: "DEBUG"
+    order_manager: "INFO"
+    position_tracker: "INFO"
+    trade_logger: "INFO"
+    risk_manager: "INFO"
+
+# System mode
+system:
+  name: "BankNifty Options Algo"
+  version: "1.0.0"
+  mode: "paper"  # paper | live
+  log_level: "INFO"
+
+trading_hours:
+  start: "09:15"
+  end: "15:30"
+  timezone: "Asia/Kolkata"
+
+capital:
+  initial: 100000
+  currency: "INR"
+
+broker:
+  provider: "zerodha"  # zerodha | paper_trading
+  default_lot_size: 15
+
+database:
+  path: "data/banknifty.db"
+  backup_enabled: true
+  backup_interval_minutes: 60
+
+monitoring:
+  ping_interval_seconds: 30
+  stuck_threshold_seconds: 300
+  failure_threshold: 3
+
+paths:
+  data_dir: "data"
+  logs_dir: "logs"
+  strategies_dir: "strategies"
+  journal_dir: "journal"
+  backtests_dir: "backtests"
+  algo_dir: "algo"

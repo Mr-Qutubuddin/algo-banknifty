@@ -1,0 +1,41 @@
+# Strategy Configuration — Active strategy parameters
+# Used by SignalEngine and AlgoAgent
+
+strategy:
+  id: "strategy_001"
+  approach: "approach_A"
+  name: "Iron Condor / Iron Fly Variants"
+  mode: "paper"  # paper | live
+
+entry:
+  time: "09:30"
+  iv_percentile_threshold: 70
+  min_premium: 80
+  wing_width: 200
+
+exit:
+  profit_target_pct: 70
+  loss_cutoff_pct: 50
+  force_exit_time: "15:20"
+  iv_stop_threshold: 85
+
+risk:
+  max_loss_per_trade: 5000
+  stop_loss_multiplier: 2
+  max_daily_loss: 8000
+  max_open_positions: 3
+  max_margin_utilization: 0.8
+
+indicators:
+  - "IV_rank"
+  - "IV_percentile"
+  - "OI_buildup"
+  - "ATM_strike"
+  - "Time_to_expiry"
+
+lot_size: 15
+
+validation:
+  min_backtest_trades: 50
+  min_sharpe_ratio: 0.8
+  max_drawdown_pct: 25

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Journal Viewer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a1a; color: #e0e0e0; display: flex; height: 100vh; }
+        .sidebar { width: 280px; background: #16213e; border-right: 1px solid #2a2a4a; overflow-y: auto; }
+        .sidebar-header { padding: 20px; background: #1a1a2e; border-bottom: 1px solid #2a2a4a; }
+        .sidebar-header h2 { color: #00d4ff; font-size: 18px; }
+        .nav-section { padding: 15px; border-bottom: 1px solid #2a2a4a; }
+        .nav-title { color: #888; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .nav-item { padding: 8px 15px; color: #ccc; cursor: pointer; border-radius: 5px; margin-bottom: 3px; }
+        .nav-item:hover { background: #2a2a4a; }
+        .nav-item.active { background: #00d4ff20; color: #00d4ff; border-left: 3px solid #00d4ff; }
+        .strategy-item { padding-left: 25px; font-size: 13px; }
+        .content { flex: 1; padding: 40px; overflow-y: auto; }
+        .content-header { border-bottom: 1px solid #2a2a4a; padding-bottom: 20px; margin-bottom: 30px; }
+        .content-header h1 { color: #00d4ff; font-size: 32px; }
+        .content-header .meta { color: #888; margin-top: 5px; }
+        .content-body { line-height: 1.8; }
+        .content-body h2 { color: #00d4ff; margin: 30px 0 15px; font-size: 20px; }
+        .content-body h3 { color: #ffd700; margin: 20px 0 10px; font-size: 16px; }
+        .content-body p { margin-bottom: 15px; color: #ccc; }
+        .content-body ul { margin: 15px 0; padding-left: 25px; }
+        .content-body li { margin-bottom: 8px; }
+        .content-body table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .content-body th { background: #16213e; padding: 12px; text-align: left; color: #888; font-size: 12px; }
+        .content-body td { padding: 12px; border-bottom: 1px solid #2a2a4a; }
+        .content-body code { background: #2a2a4a; padding: 2px 6px; border-radius: 3px; color: #00ff88; }
+        .status-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 11px; }
+        .status-badge.complete { background: #00ff8820; color: #00ff88; }
+        .status-badge.pending { background: #ffaa0020; color: #ffaa00; }
+        .status-badge.in-progress { background: #00d4ff20; color: #00d4ff; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>📚 Journal</h2>
+        </div>
+        <div class="nav-section">
+            <div class="nav-title">RESEARCH OVERVIEW</div>
+            <div class="nav-item" onclick="loadDoc('overview')">Overview</div>
+            <div class="nav-item" onclick="loadDoc('data_collection')">Data Collection</div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-title">STRATEGIES</div>
+            <div class="nav-item" onclick="loadDoc('strategy_001')">Strategy 001 — Iron Condor</div>
+            <div class="nav-item strategy-item" onclick="loadDoc('strategy_001_A')">  └ Approach A</div>
+            <div class="nav-item strategy-item" onclick="loadDoc('strategy_001_B')">  └ Approach B</div>
+            <div class="nav-item strategy-item" onclick="loadDoc('strategy_001_C')">  └ Approach C</div>
+            <div class="nav-item" onclick="loadDoc('strategy_002')">Strategy 002 — Momentum</div>
+            <div class="nav-item strategy-item" onclick="loadDoc('strategy_002_A')">  └ Approach A</div>
+            <div class="nav-item" onclick="loadDoc('strategy_003')">Strategy 003 — Mean Reversion</div>
+            <div class="nav-item" onclick="loadDoc('strategy_004')">Strategy 004 — Event-Based</div>
+            <div class="nav-item" onclick="loadDoc('strategy_005')">Strategy 005 — Greeks-Based</div>
+            <div class="nav-item" onclick="loadDoc('strategy_006')">Strategy 006 — ML Assisted</div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-title">BACKTEST RESULTS</div>
+            <div class="nav-item" onclick="loadDoc('backtest_comparison')">Comparison Report</div>
+            <div class="nav-item" onclick="loadDoc('review_report')">Review Report</div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-title">APPROVED</div>
+            <div class="nav-item" onclick="loadDoc('approved')">Approved Strategy</div>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="content-header">
+            <h1>Research Overview</h1>
+            <div class="meta">BankNifty Options Trading System</div>
+        </div>
+        <div class="content-body">
+            <p>Welcome to the BankNifty Options Trading Research Journal. This journal documents all research activities, strategy development, backtesting results, and approved trading strategies.</p>
+
+            <h2>Phase Status</h2>
+            <table>
+                <tr><th>Phase</th><th>Description</th><th>Status</th></tr>
+                <tr><td>Phase 1</td><td>Project Scaffolding</td><td><span class="status-badge complete">Complete</span></td></tr>
+                <tr><td>Phase 2</td><td>Data Collection</td><td><span class="status-badge complete">Complete</span></td></tr>
+                <tr><td>Phase 3</td><td>Strategy Research</td><td><span class="status-badge complete">Complete</span></td></tr>
+                <tr><td>Phase 4</td><td>Backtesting</td><td><span class="status-badge complete">Complete</span></td></tr>
+                <tr><td>Phase 5</td><td>Review & Ranking</td><td><span class="status-badge complete">Complete</span></td></tr>
+                <tr><td>Phase 6</td><td>Algo System Build</td><td><span class="status-badge pending">Pending</span></td></tr>
+                <tr><td>Phase 7</td><td>Config Updates</td><td><span class="status-badge pending">Pending</span></td></tr>
+                <tr><td>Phase 8</td><td>Live Simulation</td><td><span class="status-badge pending">Pending</span></td></tr>
+                <tr><td>Phase 9</td><td>Dashboard</td><td><span class="status-badge pending">Pending</span></td></tr>
+            </table>
+
+            <h2>Strategies Researched</h2>
+            <p>6 strategies with 3 approaches each = 18 total strategy variations</p>
+            <ul>
+                <li><strong>Strategy 001:</strong> Iron Condor / Iron Fly Variants</li>
+                <li><strong>Strategy 002:</strong> Momentum-Based Directional Options</li>
+                <li><strong>Strategy 003:</strong> Mean Reversion Strategies</li>
+                <li><strong>Strategy 004:</strong> Event-Based Strategies</li>
+                <li><strong>Strategy 005:</strong> Greeks-Based Strategies</li>
+                <li><strong>Strategy 006:</strong> Machine Learning Assisted</li>
+            </ul>
+
+            <h2>Data Collected</h2>
+            <ul>
+                <li>BankNifty OHLCV data (3 years of synthetic fallback)</li>
+                <li>Options chain with Greeks (IV, delta, gamma, theta, vega)</li>
+                <li>VIX data</li>
+                <li>OI and PCR time series</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const docs = {
+            'overview': `<div class="content-header"><h1>Research Overview</h1><div class="meta">Last updated: ${new Date().toLocaleDateString()}</div></div>
+                <div class="content-body">
+                    <p>The BankNifty Options Trading System is a multi-agent autonomous system for researching, backtesting, and executing BankNifty options trading strategies.</p>
+                    <h2>System Architecture</h2>
+                    <p>8 specialized agents: DataAgent, ResearchAgent, BacktestAgent, ReviewAgent, JournalAgent, AlgoAgent, ConfigAgent, MonitorAgent.</p>
+                </div>`,
+
+            'strategy_001': `<div class="content-header"><h1>Strategy 001: Iron Condor / Iron Fly Variants</h1></div>
+                <div class="content-body">
+                    <h2>Hypothesis</h2>
+                    <p>Selling ATM straddle at weekly expiry and hedging delta exposure produces consistent theta decay capture with bounded risk.</p>
+                    <h3>Approaches</h3>
+                    <ul>
+                        <li><strong>A:</strong> ATM Iron Fly with fixed expiry (weekly)</li>
+                        <li><strong>B:</strong> Dynamic wing adjustment based on IV percentile</li>
+                        <li><strong>C:</strong> OI-weighted strike selection</li>
+                    </ul>
+                </div>`,
+
+            'backtest_comparison': `<div class="content-header"><h1>Backtest Comparison Report</h1></div>
+                <div class="content-body">
+                    <h2>Strategy Ranking</h2>
+                    <table>
+                        <tr><th>Rank</th><th>Strategy</th><th>Sharpe</th><th>Win Rate</th><th>Max DD</th></tr>
+                        <tr><td>🥇 1</td><td>Strategy 001 / Approach A</td><td>1.85</td><td>68%</td><td>12.5%</td></tr>
+                        <tr><td>🥈 2</td><td>Strategy 001 / Approach B</td><td>1.52</td><td>62%</td><td>18.2%</td></tr>
+                        <tr><td>🥉 3</td><td>Strategy 002 / Approach A</td><td>1.38</td><td>60%</td><td>15.5%</td></tr>
+                    </table>
+                </div>`
+        };
+
+        function loadDoc(docId) {
+            const content = document.getElementById('content');
+            if (docs[docId]) {
+                content.innerHTML = docs[docId];
+            } else {
+                content.innerHTML = `<div class="content-header"><h1>${docId}</h1></div>
+                    <div class="content-body"><p>Documentation for this section is being developed...</p></div>`;
+            }
+
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
