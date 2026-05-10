@@ -816,6 +816,7 @@ class ScalpingBacktest:
                 "side":          pos.side,
                 "lots":          pos.lots,
                 "entry_price":   pos.entry_price,
+                "entry_opt_price": pos.entry_price,  # option fill price (same as entry_price for BUY)
                 "entry_time":    pos.entry_time,
                 "entry_tick":    pos.entry_tick,
                 "current_price": current_opt_price,
@@ -825,9 +826,11 @@ class ScalpingBacktest:
             exit_sig = strategy.get_exit_signal(tick, pos_dict, port_state)
 
             if exit_sig and exit_sig.get("should_exit", False):
-                # Use next bar OPEN for fill price (realistic execution, no look-ahead)
+                # Exit fill price = current option price (BS-computed at current bar close)
+                # This is the correct TradeTron-style fill: we know the signal exists NOW,
+                # so the fill is at the current bar's close (realizable price at signal time).
                 exit_price = self._brokerage.apply_slippage(
-                    self._brokerage.round_lot(exit_fill_price),
+                    self._brokerage.round_lot(current_opt_price),
                     "SELL" if pos.side == "BUY" else "BUY"
                 )
                 self._close_position(

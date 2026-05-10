@@ -16,7 +16,7 @@ Entry — Put Buying:
   • Position: BUY PE — ATM or 1 step OTM (50-point step)
 
 Exit:
-  • Take Profit : +5 points on option premium
+  • Take Profit : +25% on option premium (realistic for 1-min scalping)
   • Stop Loss   : -15% on entry premium
   • SMA Reversal: Call exits when price < SMA20; Put exits when price > SMA20
   • Hard Exit   : 15:15 EOD
@@ -105,8 +105,10 @@ class Nifty50ScalpingStrategy(ScalpingStrategy):
         self.volume_multiplier: float = self.config.get("volume_multiplier", 1.5)
 
         # Exit thresholds
-        self.tp_points: float  = self.config.get("tp_points", 5.0)   # absolute TP in option premium
-        self.sl_pct: float      = self.config.get("sl_pct", -0.15)    # 15% SL
+        # TP as % of entry premium (NOT absolute points — too easy to hit on Nifty 50)
+        # 25% TP means option must move 25% from entry to hit TP
+        self.tp_pct: float       = self.config.get("tp_pct", 0.25)     # 25% profit target
+        self.sl_pct: float      = self.config.get("sl_pct", -0.15)    # 15% stop loss
 
         # Execution window (HH:MM times in minutes from midnight)
         self.start_minute: int = self.config.get("start_minute", 9 * 60 + 20)   # 09:20
@@ -278,16 +280,16 @@ class Nifty50ScalpingStrategy(ScalpingStrategy):
                 "exit_price":  current_opt_p,
             }
 
-        # ── TP: +5 points on option premium ─────────────────────────────────
+        # ── TP: +25% on entry premium ─────────────────────────────────────────
         if side == "BUY":
-            price_move = current_opt_p - entry_p
+            pnl_pct = (current_opt_p - entry_p) / entry_p if entry_p > 0 else 0.0
         else:
-            price_move = entry_p - current_opt_p
+            pnl_pct = (entry_p - current_opt_p) / entry_p if entry_p > 0 else 0.0
 
-        if price_move >= self.tp_points:
+        if pnl_pct >= self.tp_pct:
             return {
                 "should_exit": True,
-                "reason":      f"TP hit: premium +{price_move:.2f} pts (>= {self.tp_points} pts)",
+                "reason":      f"TP hit: premium +{pnl_pct*100:.1f}% (>= {self.tp_pct*100:.0f}%)",
                 "exit_price":  current_opt_p,
             }
 

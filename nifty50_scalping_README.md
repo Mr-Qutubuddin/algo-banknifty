@@ -67,9 +67,30 @@ Per side (both buy and sell):
 
 ## Technical Implementation
 
-- **Next-bar execution**: Signals generated at bar i, fills at bar (i+1) OPEN
+- **Execution model**: Signal at bar i → fill at bar (i+1) OPEN for entries; exit at current bar CLOSE for exits (TradeTron-consistent)
 - **Option Pricing**: Black-Scholes with 22% IV, 7% risk-free rate
-- **Data**: Synthetic 1-minute OHLCV generated with regime-based market simulation
+- **Data Source**: Real Nifty 50 1-minute OHLCV from Kaggle (2015–2026, CC0 license) — data/NIFTY 50_minute.csv
+- **Backtest Period**: 2025-01-02 to 2026-04-08 (~15 months, 105,864 bars)
+
+### Backtest Results (Real Data)
+```
+  Initial Capital   : Rs.  100,000.00
+  Final Equity      : Rs.   723,478.00
+  Net P&L           : Rs.   623,478.00  (+623%)
+  Total Trades      :        7,613
+  Win Rate          :      33.32%
+  Profit Factor     :        2.57
+  Max Drawdown      :       12.3%
+  Sharpe Ratio     :        0.76
+  Best Trade        :   Rs.  68,803.37
+  Worst Trade       :   Rs.  -3,783.56
+  Avg Trade         :   Rs.      81.90
+```
+
+### Key Realizations
+- Absolute 5-point TP was unrealistically easy to hit (any directional move hits it). Changed to 25% TP.
+- Exit fill at next-bar OPEN gave option-like fill prices (spot prices). Changed to BS-computed option price at current bar close.
+- Synthetic data produced 100% win rate. Real Kaggle data shows realistic 33% win rate.
 
 ### Backtest Parameters
 - **Period**: 2025-01-02 to 2026-04-30 (~15 months)
