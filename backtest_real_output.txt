@@ -1,0 +1,15 @@
+Loading real Nifty 50 1-minute data...
+Data: 110,840 bars
+Backtest starting...
+2026-05-10 15:05:50,139 [INFO] backtests.scalping_backtest: Registered strategy: nifty50 (Nifty50ScalpingStrategy)
+2026-05-10 15:05:50,140 [INFO] backtests.scalping_backtest: Starting backtest — 110840 bars, timeframe=1m, strategies=['nifty50']
+2026-05-10 15:11:45,021 [INFO] backtests.scalping_backtest: Backtest complete — 12071 total trades
+Total Trades: 12071
+Win Rate: 47.69%
+Win: 5757 | Loss: 6314
+Final Equity: 225,814
+Max Drawdown: 2608.00%
+Sharpe: 0.29
+Profit Factor: 1.14
+Avg Trade: 10.42
+Done

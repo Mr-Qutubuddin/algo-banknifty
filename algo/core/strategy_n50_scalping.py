@@ -105,10 +105,8 @@ class Nifty50ScalpingStrategy(ScalpingStrategy):
         self.volume_multiplier: float = self.config.get("volume_multiplier", 1.5)
 
         # Exit thresholds
-        # TP as % of entry premium (NOT absolute points — too easy to hit on Nifty 50)
-        # 25% TP means option must move 25% from entry to hit TP
-        self.tp_pct: float       = self.config.get("tp_pct", 0.25)     # 25% profit target
-        self.sl_pct: float      = self.config.get("sl_pct", -0.15)    # 15% stop loss
+        self.tp_points: float  = self.config.get("tp_points", 5.0)   # 5 point TP on option premium
+        self.sl_pct: float      = self.config.get("sl_pct", -0.15)    # 15% SL
 
         # Execution window (HH:MM times in minutes from midnight)
         self.start_minute: int = self.config.get("start_minute", 9 * 60 + 20)   # 09:20
@@ -153,22 +151,29 @@ class Nifty50ScalpingStrategy(ScalpingStrategy):
 
     # ── time-window helper ─────────────────────────────────────────────────────
 
-    def _within_window(self, timestamp_str: str) -> bool:
+    def _within_window(self, timestamp) -> bool:
         """Return True if timestamp is within 09:20–15:15 execution window."""
         try:
-            # Parse "2026-01-15T09:25:00" or "2026-01-15 09:25:00"
-            ts = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
-            # Use local time (no timezone assumed)
-            total_minutes = ts.hour * 60 + ts.minute
+            # Handle pandas Timestamp, datetime, or string
+            if hasattr(timestamp, 'hour'):
+                # pandas Timestamp or datetime — extract directly
+                total_minutes = timestamp.hour * 60 + timestamp.minute
+            else:
+                # Parse string "2026-01-15T09:25:00" or "2026-01-15 09:25:00"
+                ts = datetime.fromisoformat(str(timestamp).replace("Z", "+00:00"))
+                total_minutes = ts.hour * 60 + ts.minute
             return self.start_minute <= total_minutes <= self.end_minute
         except Exception:
             return False
 
-    def _is_eod(self, timestamp_str: str) -> bool:
+    def _is_eod(self, timestamp) -> bool:
         """Return True if timestamp is at or after 15:15."""
         try:
-            ts = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
-            total_minutes = ts.hour * 60 + ts.minute
+            if hasattr(timestamp, 'hour'):
+                total_minutes = timestamp.hour * 60 + timestamp.minute
+            else:
+                ts = datetime.fromisoformat(str(timestamp).replace("Z", "+00:00"))
+                total_minutes = ts.hour * 60 + ts.minute
             return total_minutes >= self.end_minute
         except Exception:
             return False
@@ -280,16 +285,16 @@ class Nifty50ScalpingStrategy(ScalpingStrategy):
                 "exit_price":  current_opt_p,
             }
 
-        # ── TP: +25% on entry premium ─────────────────────────────────────────
+        # ── TP: +5 points on option premium ─────────────────────────────────
         if side == "BUY":
-            pnl_pct = (current_opt_p - entry_p) / entry_p if entry_p > 0 else 0.0
+            price_move = current_opt_p - entry_p
         else:
-            pnl_pct = (entry_p - current_opt_p) / entry_p if entry_p > 0 else 0.0
+            price_move = entry_p - current_opt_p
 
-        if pnl_pct >= self.tp_pct:
+        if price_move >= self.tp_points:
             return {
                 "should_exit": True,
-                "reason":      f"TP hit: premium +{pnl_pct*100:.1f}% (>= {self.tp_pct*100:.0f}%)",
+                "reason":      f"TP hit: premium +{price_move:.2f} pts (>= {self.tp_points} pts)",
                 "exit_price":  current_opt_p,
             }
 
